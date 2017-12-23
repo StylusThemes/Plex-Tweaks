@@ -1,0 +1,187 @@
+/*:::::::::::::::::::::::::::::::::::::::::::::::: Cast List ::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/*::: Hide Cast List :::*/
+div[class^="PrePlayCastList-castList-"],
+div[class*="3dQB5"] {
+  display: none !important;
+}
+
+/*::: Hover effect on CAST cards :::*/
+a[class^="PrePlayCastCell-cardLink-"]:hover,
+a[class^="PrePlayCastCell-cardLink-"]:hover > div,
+a[class*="Tndv5"]:hover,
+a[class*="Tndv5"]:hover > div {
+  transform: scale(1.07);
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::: Movie Extras ::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/*::: Hide Movie Extras (dunno if there are tv extras or not as I could never get extras for tv shows to show up) :::*/
+div[class^="PrePlayExtrasList-extrasHubCell-"],
+div[class*="2NcGK"] {
+  display: none !important;
+}
+
+/*::: Expand 'Extras' display for movies (shows as grid instead of scroller) :::*/
+[class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2),
+[class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2) > [class^="Measure-container-"] > div > div,
+[class*="2NcGK"] > div:nth-child(2),
+[class*="2NcGK"] > div:nth-child(2) > [class*="2XznZ"] > div > div {
+  width: auto !important;
+  height: auto !important;
+}
+
+[class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2) > [class^="Measure-container-"] > div > div > div,
+[class*="2NcGK"] > div:nth-child(2) > [class*="2XznZ"] > div > div > div {
+  display: inline-block;
+
+  position: relative !important;
+
+  margin: 10px;
+
+  transform: translate3d(10px, 10px, 0) !important;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::: Related Lists ::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/*::: Hide Related List i.e Related movies|shows|Genres|People :::*/
+div[class^="PrePlayRelatedList-relatedList-"],
+div[class*="2fY8S"] {
+  display: none !important;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::: Posters ::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/*::: Posters Hover Effects :::*/ /*::: Credits to @IanCeling :::*/
+
+/* Poster Shadow */
+div[class^="MetadataPosterCard-cardContainer-"],
+div[class*="2gRcQ"] {
+  margin-top: 5px;
+
+  box-shadow: 2px 3px 8px #000;
+
+  transition: all 1s;
+}
+
+/* Poster Hover */
+div[class^="MetadataPosterCard-cardContainer-"]:hover,
+div[class*="2gRcQ"]:hover {
+  box-shadow: 0 0 0 0 #000;
+
+  transform: scale(1.05) translateY(-5px);
+}
+
+/* Continue Watching poster hover */
+div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover,
+div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover {
+  transform: scale(.97) translateY(-5px);
+}
+
+/* Add a bit of greyscale to the posters */
+div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="PosterCardImg-imageContainer-"],
+div[class*="2gRcQ"]:hover div[class*="1Ar4M"] {
+  filter: grayscale(50%) brightness(105%) contrast(220%);
+}
+
+/*::: Poster Play Button :::*/
+div[class^="MetadataPosterCardOverlay-playCircle-"],
+div[class*="M67q6"] {
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+
+  font-size: 18px;
+  line-height: 62px;
+
+  color: hsla(0, 0%, 100%, .7);
+
+  box-shadow: 0 4px 16px -2px #000;
+
+  transition: all 900ms;
+  transform: translate(-50%, -50%) scale(.1);
+}
+
+div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPosterCardOverlay-playCircle-"],
+div[class*="2gRcQ"]:hover div[class*="M67q6"] {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+div[class^="MetadataPosterCard-cardContainer-"]:hover [class^=plex-icon-play-],
+div[class*="2gRcQ"]:hover [class^=plex-icon-play-] {
+  font-size: 30px;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::: Side Bar ::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/*::: kill container margin and add transition speed :::*/
+/*::: Contract the sidebar to save screen space [Expands back out on hovering over the sidebar] :::*/
+.page-container {
+  margin-left: 0 !important;
+}
+
+.sidebar-container {
+  width: 65px !important;
+
+  transition: all .5s ease !important;
+}
+
+.sidebar-container:hover {
+  width: 240px !important;
+
+  transition: all 1.5s ease !important;
+}
+
+[class^="SidebarLink-title"],
+[class^="SidebarServerLibraries-librariesTitle"],
+[class^="SidebarList-sidebarListHeader"],
+[class^="ServerMenuButton-serverMenuTitle-"],
+[class*="7WfGt"],
+[class*="3iqmv"],
+[class*="m1Kth"],
+[class*="cAqMG"] {
+  font-size: 0 !important;
+}
+
+.sidebar-container:hover [class^="SidebarLink-title"],
+.sidebar-container:hover [class^="SidebarServerLibraries-librariesTitle"],
+.sidebar-container:hover [class^="SidebarList-sidebarListHeader"],
+.sidebar-container:hover [class*="7WfGt"],
+.sidebar-container:hover [class*="3iqmv"],
+.sidebar-container:hover [class*="m1Kth"] {
+  font-size: 12px !important;
+
+  transition: all 2s ease !important;
+}
+
+[class^="SidebarLibrariesActions-actions"],
+[class^="SidebarLink-children"],
+[class^="DisclosureArrow-disclosureArrow-"],
+[class*="2eVPc"],
+[class*="7pc_H"],
+[class*="1sBFv"] {
+  display: none !important;
+}
+
+.sidebar-container:hover [class^="SidebarLibrariesActions-actions"],
+.sidebar-container:hover [class^="SidebarLink-children"],
+.sidebar-container:hover [class^="DisclosureArrow-disclosureArrow"],
+.sidebar-container:hover [class*="2eVPc"],
+.sidebar-container:hover [class*="7pc_H"],
+.sidebar-container:hover [class*="1sBFv"] {
+  display: inline-block !important;
+
+  transition: all 2s ease !important;
+}
+
+.sidebar-container:hover [class^="ServerMenuButton-serverMenuTitle-"],
+.sidebar-container:hover [class*="cAqMG"] {
+  font-size: 14px !important;
+
+  transition: all 3s ease !important;
+}
+
+[class^="SidebarLibraryItem-action"],
+[class*="2AHiQ"] {
+  width: 0 !important;
+}

@@ -1,0 +1,55 @@
+/* ==UserStyle==
+@name        Plex Fixes
+@version     [[VERSION]]
+@description Bringing back plex to pre-3.0.0
+@namespace   github.com/StylusThemes
+@author      StylusThemes <https://github.com/StylusThemes>
+@homepageURL https://github.com/StylusThemes/Plex-Fixes
+@supportURL  https://github.com/StylusThemes/Plex-Fixes/issues
+@updateURL   https://raw.githubusercontent.com/StylusThemes/Plex-Fixes/master/style.user.css
+@license     CC-BY-SA-4.0
+
+@advanced text PORT "Port Number" "32400"
+@advanced text URL "Custom URL" "example.com"
+@advanced text IMGURL "Custom Background Image for Discover Page *Works better if the image is a darker picture*" "http://example.com/example.jpg"
+
+@advanced dropdown CastL "Cast List" {
+CLY "Hover Effects" <<<EOT
+a[class*=Tndv5]:hover,a[class*=Tndv5]:hover>div,a[class^=PrePlayCastCell-cardLink-]:hover,a[class^=PrePlayCastCell-cardLink-]:hover>div{transform:scale(1.07)} EOT;
+CLH "Hide Cast List" <<<EOT
+div[class*="3dQB5"],div[class^=PrePlayCastList-castList-]{display:none!important} EOT;
+CLN "No Hover Effect & Don't Hide Cast List" <<<EOT
+ EOT;
+}
+
+@advanced dropdown ExtrasM "Extras" {
+EEY "Expand Movie Extras" <<<EOT
+[class*="2NcGK"]>div:nth-child(2),[class*="2NcGK"]>div:nth-child(2)>[class*="2XznZ"]>div>div,[class^=PrePlayExtrasList-extrasHubCell-]>div:nth-child(2),[class^=PrePlayExtrasList-extrasHubCell-]>div:nth-child(2)>[class^=Measure-container-]>div>div{width:auto!important;height:auto!important}[class*="2NcGK"]>div:nth-child(2)>[class*="2XznZ"]>div>div>div,[class^=PrePlayExtrasList-extrasHubCell-]>div:nth-child(2)>[class^=Measure-container-]>div>div>div{display:inline-block;position:relative!important;margin:10px;transform:translate3d(10px,10px,0)!important} EOT;
+EEH "Hide Extras" <<<EOT
+div[class*="2NcGK"],div[class^=PrePlayExtrasList-extrasHubCell-]{display:none!important} EOT;
+EEN "Don't Expand & Don't Hide" <<<EOT
+ EOT;
+}
+
+@advanced dropdown RelatedL "Related Lists" {
+RLY "Hide Related Lists" <<<EOT
+div[class*="2fY8S"],div[class^=PrePlayRelatedList-relatedList-]{display:none!important} EOT;
+RLN "Don't Hide" <<<EOT
+ EOT;
+}
+
+@advanced dropdown PosterHE "Posters" {
+PHEY "Hover Effects" <<<EOT
+div[class^="MetadataPosterCard-cardContainer-"],div[class*="2gRcQ"]{margin-top:5px;box-shadow:2px 3px 8px #000;transition:all 1s}div[class^="MetadataPosterCard-cardContainer-"]:hover,div[class*="2gRcQ"]:hover{box-shadow:0 0 0 0 #000;transform:scale(1.05) translateY(-5px)}div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover,div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover{transform:scale(.97) translateY(-5px)}div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="PosterCardImg-imageContainer-"],div[class*="2gRcQ"]:hover div[class*="1Ar4M"]{filter: grayscale(50%) brightness(105%) contrast(220%)}div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="M67q6"]{border-radius:50%;width:62px;height:62px;font-size:18px;line-height:62px;color:hsla(0, 0%, 100%, .7);box-shadow:0 4px 16px -2px #000;transition:all 900ms;transform:translate(-50%, -50%) scale(.1)}div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="2gRcQ"]:hover div[class*="M67q6"]{transform:translate(-50%, -50%) scale(1.2)}div[class^="MetadataPosterCard-cardContainer-"]:hover [class^=plex-icon-play-],div[class*="2gRcQ"]:hover [class^=plex-icon-play-]{font-size:30px} EOT;
+PHEN "No" <<<EOT
+ EOT;
+}
+
+@advanced dropdown CompactSB "Contract The Sidebar To Save Screen Space [Expands Back Out On Hovering Over The Sidebar]" {
+CSY "Yes" <<<EOT
+.page-container{margin-left:0 !important}.sidebar-container{width:65px !important;transition:all 0.5s ease !important}.sidebar-container:hover{width:240px !important;transition:all 1.5s ease !important}[class^="SidebarLink-title"],[class^="SidebarServerLibraries-librariesTitle"],[class^="SidebarList-sidebarListHeader"],[class^="ServerMenuButton-serverMenuTitle-"],[class*="7WfGt"],[class*="3iqmv"],[class*="m1Kth"],[class*="cAqMG"]{font-size:0 !important}.sidebar-container:hover [class^="SidebarLink-title"],.sidebar-container:hover [class^="SidebarServerLibraries-librariesTitle"],.sidebar-container:hover [class^="SidebarList-sidebarListHeader"],.sidebar-container:hover [class*="7WfGt"],.sidebar-container:hover [class*="3iqmv"],.sidebar-container:hover [class*="m1Kth"]{font-size:12px !important;transition:all 2s ease !important}[class^="SidebarLibrariesActions-actions"],[class^="SidebarLink-children"],[class^="DisclosureArrow-disclosureArrow-"],[class*="2eVPc"],[class*="7pc_H"],[class*="1sBFv"]{display:none !important}.sidebar-container:hover [class^="SidebarLibrariesActions-actions"],.sidebar-container:hover [class^="SidebarLink-children"],.sidebar-container:hover [class^="DisclosureArrow-disclosureArrow"],.sidebar-container:hover [class*="2eVPc"],.sidebar-container:hover [class*="7pc_H"],.sidebar-container:hover [class*="1sBFv"]{display:inline-block !important;transition:all 2s ease !important}.sidebar-container:hover [class^="ServerMenuButton-serverMenuTitle-"],.sidebar-container:hover [class*="cAqMG"]{font-size:14px !important;transition:all 3s ease !important}[class^="SidebarLibraryItem-action"],[class*="2AHiQ"]{width:0 !important} EOT;
+CSN "No" <<<EOT
+ EOT;
+}
+==/UserStyle== */
+/* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
