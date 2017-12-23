@@ -41,7 +41,7 @@ RLN "Don't Hide" <<<EOT
 @advanced dropdown PosterHE "Posters" {
 PHEY "Hover Effects" <<<EOT
 div[class^="MetadataPosterCard-cardContainer-"],div[class*="2gRcQ"]{margin-top:5px;box-shadow:2px 3px 8px #000;transition:all 1s}div[class^="MetadataPosterCard-cardContainer-"]:hover,div[class*="2gRcQ"]:hover{box-shadow:0 0 0 0 #000;transform:scale(1.05) translateY(-5px)}div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover,div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover{transform:scale(.97) translateY(-5px)}div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="PosterCardImg-imageContainer-"],div[class*="2gRcQ"]:hover div[class*="1Ar4M"]{filter: grayscale(50%) brightness(105%) contrast(220%)}div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="M67q6"]{border-radius:50%;width:62px;height:62px;font-size:18px;line-height:62px;color:hsla(0, 0%, 100%, .7);box-shadow:0 4px 16px -2px #000;transition:all 900ms;transform:translate(-50%, -50%) scale(.1)}div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="2gRcQ"]:hover div[class*="M67q6"]{transform:translate(-50%, -50%) scale(1.2)}div[class^="MetadataPosterCard-cardContainer-"]:hover [class^=plex-icon-play-],div[class*="2gRcQ"]:hover [class^=plex-icon-play-]{font-size:30px} EOT;
-PHEN "No" <<<EOT
+PHEN "No Hover Effects" <<<EOT
  EOT;
 }
 
