@@ -4,9 +4,9 @@
 
 Bringing some parts of plex back to how they where before the 3.0.0 update, with new things coming as well.
 
-![TV Preview](../img/preview/tv.jpg?raw=true "TV Preview")
-![Movie Preview](../img/preview/movie.jpg?raw=true "Movie Preview")
-![Music Preview](../img/preview/music.jpg?raw=true "Music Preview")
+![TV Preview](./img/preview/tv.jpg?raw=true "TV Preview")
+![Movie Preview](./img/preview/movie.jpg?raw=true "Movie Preview")
+![Music Preview](./img/preview/music.jpg?raw=true "Music Preview")
 
 ## How to use
 
