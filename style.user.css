@@ -84,8 +84,8 @@ a {
   user-select: all !important;
 }
 
-a:after,
-a:before {
+a::after,
+a::before {
   content: "\0020" !important;
 }
 
@@ -247,7 +247,7 @@ div[class^="MenuContainer-menu-"],
 div[class*="2yixi"],
 div[class*="MI02O"],
 div[class*="3Gtlw"] {
-  background-color: rgba(35, 36, 38,.5) !important;
+  background-color: rgba(35, 36, 38, .5) !important;
 }
 
 /* Make background of play queue/play next normal */
@@ -297,5 +297,4 @@ div[class*="2UnXo"] > div > div > div {
 /*[[PosterHE]]*/
 
 /*[[CompactSB]]*/
-
 }
