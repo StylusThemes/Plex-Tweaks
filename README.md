@@ -1,5 +1,7 @@
 # Plex Fixes
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a8affe5fdfcb4d5dac8243f7cdc97a47)](https://www.codacy.com/app/StylusThemes/Plex-Fixes?utm_source=github.com&utm_medium=referral&utm_content=StylusThemes/Plex-Fixes&utm_campaign=badger)
+
 ## Description
 
 Bringing some parts of plex back to how they where before the 3.0.0 update, with new things coming as well.
