@@ -57,11 +57,12 @@ div[class*="2fY8S"] {
 /* Poster Shadow */
 div[class^="MetadataPosterCard-cardContainer-"],
 div[class*="2gRcQ"] {
-  margin-top: 5px;
+  box-shadow: 0 6px 26px -2px #000;
 
-  box-shadow: 2px 3px 8px #000;
+  transition: all 350ms;
 
-  transition: all 1s;
+  -webkit-perspective: 500px;
+  perspective: 500px;
 }
 
 /* Poster Hover */
@@ -69,13 +70,34 @@ div[class^="MetadataPosterCard-cardContainer-"]:hover,
 div[class*="2gRcQ"]:hover {
   box-shadow: 0 0 0 0 #000;
 
-  transform: scale(1.05) translateY(-5px);
+  transform: scale(.95) translateY(0px);
 }
 
 /* Continue Watching poster hover */
 div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover,
 div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover {
   transform: scale(.97) translateY(-5px);
+}
+
+/*::: Photo Card Hover :::*/
+[class^="MetadataPhotoCell-photoContainer-"],
+[class*="1HkmQ"] {
+  transition: all 350ms;
+
+  -webkit-perspective: 500px;
+  perspective: 500px;
+}
+
+[class^="MetadataPhotoCell-photoContainer-"]:hover,
+[class*="1HkmQ"] {
+  transform: scale(.95) translateY(0px);
+}
+
+[class^="MetadataPhotoCell-photo-"]:hover,
+[class*="Po3Kx"]:hover {
+  box-shadow: none;
+
+  transform: scale(1.02);
 }
 
 /* Add a bit of greyscale to the posters */
@@ -88,17 +110,17 @@ div[class*="2gRcQ"]:hover div[class*="1Ar4M"] {
 div[class^="MetadataPosterCardOverlay-playCircle-"],
 div[class*="M67q6"] {
   border-radius: 50%;
-  width: 62px;
-  height: 62px;
+  width: 50px;
+  height: 50px;
 
   font-size: 18px;
-  line-height: 62px;
+  line-height: 48px;
 
   color: hsla(0, 0%, 100%, .7);
 
   box-shadow: 0 4px 16px -2px #000;
 
-  transition: all 900ms;
+  transition: all 350ms;
   transform: translate(-50%, -50%) scale(.1);
 }
 

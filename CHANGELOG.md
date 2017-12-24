@@ -1,10 +1,23 @@
 # Plex Fixes Changelog
 
+## v0.0.14 ... (24 DECEMBER 17)
+
+### Additions:
+`+` Added a bit of opacity to the sidebar
+
+`+` Made user pictures in navbar/settings square
+
+`+` Added hover effects into posters options for photo library posters
+
+### Changes
+`+` Changed animation speed to be slightly faster for hovering over posters
+
 ## v0.0.13 ... (06 AUGUST 17)
 
 ### Additions:
 `+` Added a custom Url support for people who have a custom url to access plex.
-`+` Added an option to allow background images for certain areas of plex. *You don't have to use this and you can leave the option as is and it'll default to a dark background like how it used to be pre-3.0.0 plex, if you do decide to use this option then I suggest using a dark background image for the time being, I plan on going through things soonish to see if I can change things up a bit to support light & dark backgrounds*
+
+`+` Added an option to allow background images for certain areas of plex.
 
 ### Fixes:
 `+` update for plex web v3.17.3

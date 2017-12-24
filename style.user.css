@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        Plex Fixes
-@version     0.0.13
+@version     0.0.14
 @description Bringing back plex to pre-3.0.0
 @namespace   github.com/StylusThemes
 @author      StylusThemes <https://github.com/StylusThemes>
@@ -40,7 +40,7 @@ RLN "Don't Hide" <<<EOT
 
 @advanced dropdown PosterHE "Posters" {
 PHEY "Hover Effects" <<<EOT
-div[class^="MetadataPosterCard-cardContainer-"],div[class*="2gRcQ"]{margin-top:5px;box-shadow:2px 3px 8px #000;transition:all 1s}div[class^="MetadataPosterCard-cardContainer-"]:hover,div[class*="2gRcQ"]:hover{box-shadow:0 0 0 0 #000;transform:scale(1.05) translateY(-5px)}div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover,div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover{transform:scale(.97) translateY(-5px)}div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="PosterCardImg-imageContainer-"],div[class*="2gRcQ"]:hover div[class*="1Ar4M"]{filter: grayscale(50%) brightness(105%) contrast(220%)}div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="M67q6"]{border-radius:50%;width:62px;height:62px;font-size:18px;line-height:62px;color:hsla(0, 0%, 100%, .7);box-shadow:0 4px 16px -2px #000;transition:all 900ms;transform:translate(-50%, -50%) scale(.1)}div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="2gRcQ"]:hover div[class*="M67q6"]{transform:translate(-50%, -50%) scale(1.2)}div[class^="MetadataPosterCard-cardContainer-"]:hover [class^=plex-icon-play-],div[class*="2gRcQ"]:hover [class^=plex-icon-play-]{font-size:30px} EOT;
+div[class^="MetadataPosterCard-cardContainer-"],div[class*="2gRcQ"]{box-shadow:0 6px 26px -2px #000;transition:all 350ms;-webkit-perspective:500px;perspective:500px}div[class^="MetadataPosterCard-cardContainer-"]:hover,div[class*="2gRcQ"]:hover{box-shadow:0 0 0 0 #000;transform:scale(.95) translateY(0px)}div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover,div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover{transform:scale(.97) translateY(-5px)}[class^="MetadataPhotoCell-photoContainer-"],[class*="1HkmQ"]{transition:all 350ms;-webkit-perspective:500px;perspective:500px}[class^="MetadataPhotoCell-photoContainer-"]:hover,[class*="1HkmQ"]{transform:scale(.95) translateY(0px)}[class^="MetadataPhotoCell-photo-"]:hover,[class*="Po3Kx"]:hover{box-shadow:none;transform:scale(1.02)}div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="PosterCardImg-imageContainer-"],div[class*="2gRcQ"]:hover div[class*="1Ar4M"]{filter: grayscale(50%) brightness(105%) contrast(220%)}div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="M67q6"]{border-radius:50%;width:50px;height:50px;font-size:18px;line-height:48px;color:hsla(0, 0%, 100%, .7);box-shadow:0 4px 16px -2px #000;transition:all 350ms;transform:translate(-50%, -50%) scale(.1)}div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="2gRcQ"]:hover div[class*="M67q6"]{transform:translate(-50%, -50%) scale(1.2)}div[class^="MetadataPosterCard-cardContainer-"]:hover [class^=plex-icon-play-],div[class*="2gRcQ"]:hover [class^=plex-icon-play-]{font-size:30px} EOT;
 PHEN "No Hover Effects" <<<EOT
  EOT;
 }
@@ -53,8 +53,7 @@ CSN "No" <<<EOT
 }
 ==/UserStyle== */
 /* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
-@-moz-document url-prefix("https://app.plex.tv/"),
-url-prefix("http://app.plex.tv/"),
+@-moz-document regexp("https?:\/\/(app.plex.tv)\/.*"),
 regexp("https?:\/\/.*:/*[[PORT]]*/\/.*"),
 regexp("https?:\/\//*[[URL]]*/") {
 
@@ -66,21 +65,29 @@ regexp("https?:\/\//*[[URL]]*/") {
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 10 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 08 / 05 / 2017                                                    || */
+/* ||* Updated     : 12 / 24 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 0.0.13                                                            || */
+/* ||* Version     : 0.0.14                                                            || */
 /* ||                                                                                  || */
-/* ||* Copyright   : 2017                                                              || */
+/* ||* Copyright   : 2017-2018                                                         || */
 /* ||                                                                                  || */
 /* ++----------------------------------------------------------------------------------++ */
 }
 
-@-moz-document url-prefix("https://app.plex.tv/"),
-url-prefix("http://app.plex.tv/"),
+@-moz-document regexp("https?:\/\/(app.plex.tv)\/.*"),
 regexp("https?:\/\/.*:/*[[PORT]]*/\/.*"),
 regexp("https?:\/\//*[[URL]]*/") {
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+a {
+  user-select: all !important;
+}
+
+a:after,
+a:before {
+  content: "\0020" !important;
+}
 
 /*::: Main Background Image :::*/
 .background-container [data-reactroot] div > div[style] {
@@ -175,9 +182,28 @@ div[class*="1NL8g"] > div {
   display: none !important;
 }
 
+/*::: Left navbar Opacity :::*/
+[class^="Sidebar-sidebar-"],
+[class*="e9phF"] {
+  background-color: rgba(0, 0, 0, .1) !important;
+}
+
+[class^="Sidebar-sidebarScroller-"],
+[class*="2owup"] {
+  background-color: rgba(0, 0, 0, .1) !important;
+}
+
 /*::: Hide The Go Premium Button :::*/
 .plex-pass-label {
   display: none !important;
+}
+
+/*::: Make Users pic square :::*/
+[class^="dropdown-poster-"] > div,
+[class^="card-poster"],
+[class^="AvatarImg-avatar-"],
+[class*="3Op56"] {
+  border-radius: 0;
 }
 
 /*::: Move dashboard down slightly :::*/
