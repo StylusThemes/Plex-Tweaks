@@ -70,7 +70,7 @@ div[class^="MetadataPosterCard-cardContainer-"]:hover,
 div[class*="2gRcQ"]:hover {
   box-shadow: 0 0 0 0 #000;
 
-  transform: scale(.95) translateY(0px);
+  transform: scale(.95) translateY(0);
 }
 
 /* Continue Watching poster hover */
@@ -90,7 +90,7 @@ div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover {
 
 [class^="MetadataPhotoCell-photoContainer-"]:hover,
 [class*="1HkmQ"] {
-  transform: scale(.95) translateY(0px);
+  transform: scale(.95) translateY(0);
 }
 
 [class^="MetadataPhotoCell-photo-"]:hover,

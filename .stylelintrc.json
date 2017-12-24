@@ -10,11 +10,12 @@
     "color-no-invalid-hex": "true",
     "comment-empty-line-before": "null",
     "comment-no-empty": "null",
-    "comment-whitespace-inside": "always",
+    "comment-whitespace-inside": "never",
     "declaration-bang-space-before": "always",
     "declaration-block-no-duplicate-properties": "null",
     "declaration-block-single-line-max-declarations": "null",
     "declaration-colon-newline-after": "null",
+    "declaration-empty-line-before": "null",
     "declaration-no-important": "null",
     "font-family-name-quotes": "always-where-recommended",
     "font-family-no-duplicate-names": "true",
@@ -30,7 +31,7 @@
       "always-multi-line",
       {
         "except": [ "after-single-line-comment", "first-nested" ],
-        "ignore": [ "after-comment" ],
+        "ignore": [ "after-comment", "inside-block" ],
         "severity": "warning"
       }
     ],
