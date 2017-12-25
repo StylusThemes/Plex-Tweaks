@@ -1,6 +1,7 @@
 # Plex Fixes
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a8affe5fdfcb4d5dac8243f7cdc97a47)](https://www.codacy.com/app/StylusThemes/Plex-Fixes?utm_source=github.com&utm_medium=referral&utm_content=StylusThemes/Plex-Fixes&utm_campaign=badger)
+[![Dependencies Badge](https://img.shields.io/david/dev/StylusThemes/Plex-Fixes.svg?label=%20devDependencies%20)](https://david-dm.org/StylusThemes/Plex-Fixes?type=dev)
 
 ## Description
 

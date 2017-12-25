@@ -91,7 +91,7 @@ a::before {
 
 /*::: Main Background Image :::*/
 .background-container [data-reactroot] div > div[style] {
-  background: rgba(31, 31, 31, 1.0);
+  background: rgba(31, 31, 31, 1);
   background-image: url("/*[[IMGURL]]*/") !important;
   background-position: center center;
   background-size: 100% 100% !important;
@@ -259,7 +259,7 @@ div[class*="2gkcE"],
 div[class*="mD38o"],
 div[class*="1G36_"],
 div[class*="2UnXo"] > div > div > div {
-  background: rgba(31, 31, 31, 1.0) !important;
+  background: rgba(31, 31, 31, 1) !important;
 }
 
 /*::: Pulsate Status :::*/ /*::: Credits to @IanCeling :::*/
@@ -272,7 +272,7 @@ div[class*="2UnXo"] > div > div > div {
 
 @-webkit-keyframes pulsate {
   0% {
-    opacity: 1.0;
+    opacity: 1;
 
     -webkit-transform: scale(1.7, 1);
   }
@@ -282,7 +282,7 @@ div[class*="2UnXo"] > div > div > div {
     -webkit-transform: scale(.85, .85);
   }
   100% {
-    opacity: 1.0;
+    opacity: 1;
 
     -webkit-transform: scale(1.7, 1);
   }
