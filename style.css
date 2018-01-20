@@ -1,7 +1,6 @@
 @-moz-document regexp("https?:\/\/(app.plex.tv)\/.*"),
 regexp("https?:\/\/.*:/*[[PORT]]*/\/.*"),
 regexp("https?:\/\//*[[URL]]*/") {
-
 /* ++----------------------------------------------------------------------------------++ */
 /* ||                                                                                  || */
 /* ||* Name        : Plex Fixes                                                        || */
@@ -10,9 +9,9 @@ regexp("https?:\/\//*[[URL]]*/") {
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 10 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 12 / 24 / 2017                                                    || */
+/* ||* Updated     : 01 / 19 / 2018                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 0.0.14                                                            || */
+/* ||* Version     : 1.0.0                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2017-2018                                                         || */
 /* ||                                                                                  || */
@@ -22,7 +21,6 @@ regexp("https?:\/\//*[[URL]]*/") {
 @-moz-document regexp("https?:\/\/(app.plex.tv)\/.*"),
 regexp("https?:\/\/.*:/*[[PORT]]*/\/.*"),
 regexp("https?:\/\//*[[URL]]*/") {
-
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 a {
@@ -141,6 +139,13 @@ div[class*="1NL8g"] > div {
 /*::: Hide The Go Premium Button :::*/
 .plex-pass-label {
   display: none !important;
+}
+
+/*::: Plex Fixes Version :::*/
+[class="version-title"]::after {
+  white-space: pre;
+
+  content: "\A Plex Fixes Ver. 1.0.0";
 }
 
 /*::: Make Users pic square :::*/

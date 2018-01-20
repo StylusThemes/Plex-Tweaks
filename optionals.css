@@ -100,12 +100,6 @@ div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover {
   transform: scale(1.02);
 }
 
-/* Add a bit of greyscale to the posters */
-div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="PosterCardImg-imageContainer-"],
-div[class*="2gRcQ"]:hover div[class*="1Ar4M"] {
-  filter: grayscale(50%) brightness(105%) contrast(220%);
-}
-
 /*::: Poster Play Button :::*/
 div[class^="MetadataPosterCardOverlay-playCircle-"],
 div[class*="M67q6"] {

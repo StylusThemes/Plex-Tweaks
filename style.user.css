@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        Plex Fixes
-@version     0.0.14
+@version     1.0.0
 @description Bringing back plex to pre-3.0.0
 @namespace   github.com/StylusThemes
 @author      StylusThemes <https://github.com/StylusThemes>
@@ -40,7 +40,7 @@ RLN "Don't Hide" <<<EOT
 
 @advanced dropdown PosterHE "Posters" {
 PHEY "Hover Effects" <<<EOT
-div[class^="MetadataPosterCard-cardContainer-"],div[class*="2gRcQ"]{box-shadow:0 6px 26px -2px #000;transition:all 350ms;-webkit-perspective:500px;perspective:500px}div[class^="MetadataPosterCard-cardContainer-"]:hover,div[class*="2gRcQ"]:hover{box-shadow:0 0 0 0 #000;transform:scale(.95) translateY(0px)}div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover,div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover{transform:scale(.97) translateY(-5px)}[class^="MetadataPhotoCell-photoContainer-"],[class*="1HkmQ"]{transition:all 350ms;-webkit-perspective:500px;perspective:500px}[class^="MetadataPhotoCell-photoContainer-"]:hover,[class*="1HkmQ"]{transform:scale(.95) translateY(0px)}[class^="MetadataPhotoCell-photo-"]:hover,[class*="Po3Kx"]:hover{box-shadow:none;transform:scale(1.02)}div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="PosterCardImg-imageContainer-"],div[class*="2gRcQ"]:hover div[class*="1Ar4M"]{filter: grayscale(50%) brightness(105%) contrast(220%)}div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="M67q6"]{border-radius:50%;width:50px;height:50px;font-size:18px;line-height:48px;color:hsla(0, 0%, 100%, .7);box-shadow:0 4px 16px -2px #000;transition:all 350ms;transform:translate(-50%, -50%) scale(.1)}div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="2gRcQ"]:hover div[class*="M67q6"]{transform:translate(-50%, -50%) scale(1.2)}div[class^="MetadataPosterCard-cardContainer-"]:hover [class^=plex-icon-play-],div[class*="2gRcQ"]:hover [class^=plex-icon-play-]{font-size:30px} EOT;
+div[class^="MetadataPosterCard-cardContainer-"],div[class*="2gRcQ"]{box-shadow:0 6px 26px -2px #000;transition:all 350ms;-webkit-perspective:500px;perspective:500px}div[class^="MetadataPosterCard-cardContainer-"]:hover,div[class*="2gRcQ"]:hover{box-shadow:0 0 0 0 #000;transform:scale(.95) translateY(0)}div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover,div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover{transform:scale(.97) translateY(-5px)}[class^="MetadataPhotoCell-photoContainer-"],[class*="1HkmQ"]{transition:all 350ms;-webkit-perspective:500px;perspective:500px}[class^="MetadataPhotoCell-photoContainer-"]:hover,[class*="1HkmQ"]{transform:scale(.95) translateY(0)}[class^="MetadataPhotoCell-photo-"]:hover,[class*="Po3Kx"]:hover{box-shadow:none;transform:scale(1.02)}div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="M67q6"]{border-radius:50%;width:50px;height:50px;font-size:18px;line-height:48px;color:hsla(0, 0%, 100%, .7);box-shadow:0 4px 16px -2px #000;transition:all 350ms;transform:translate(-50%, -50%) scale(.1)}div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="2gRcQ"]:hover div[class*="M67q6"]{transform:translate(-50%, -50%) scale(1.2)}div[class^="MetadataPosterCard-cardContainer-"]:hover [class^=plex-icon-play-],div[class*="2gRcQ"]:hover [class^=plex-icon-play-]{font-size:30px} EOT;
 PHEN "No Hover Effects" <<<EOT
  EOT;
 }
@@ -56,7 +56,6 @@ CSN "No" <<<EOT
 @-moz-document regexp("https?:\/\/(app.plex.tv)\/.*"),
 regexp("https?:\/\/.*:/*[[PORT]]*/\/.*"),
 regexp("https?:\/\//*[[URL]]*/") {
-
 /* ++----------------------------------------------------------------------------------++ */
 /* ||                                                                                  || */
 /* ||* Name        : Plex Fixes                                                        || */
@@ -65,9 +64,9 @@ regexp("https?:\/\//*[[URL]]*/") {
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 10 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 12 / 24 / 2017                                                    || */
+/* ||* Updated     : 01 / 19 / 2018                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 0.0.14                                                            || */
+/* ||* Version     : 1.0.0                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2017-2018                                                         || */
 /* ||                                                                                  || */
@@ -77,7 +76,6 @@ regexp("https?:\/\//*[[URL]]*/") {
 @-moz-document regexp("https?:\/\/(app.plex.tv)\/.*"),
 regexp("https?:\/\/.*:/*[[PORT]]*/\/.*"),
 regexp("https?:\/\//*[[URL]]*/") {
-
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 a {
@@ -196,6 +194,13 @@ div[class*="1NL8g"] > div {
 /*::: Hide The Go Premium Button :::*/
 .plex-pass-label {
   display: none !important;
+}
+
+/*::: Plex Fixes Version :::*/
+[class="version-title"]::after {
+  white-space: pre;
+
+  content: "\A Plex Fixes Ver. 1.0.0";
 }
 
 /*::: Make Users pic square :::*/

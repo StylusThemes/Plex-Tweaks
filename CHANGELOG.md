@@ -1,5 +1,13 @@
 # Plex Fixes Changelog
 
+## v1.0.0 ... (19 JANUARY 18)
+
+### Additions:
+`+` Added version number of style to plex settings menu
+
+### Removed
+`-` Removed greyscale from posters
+
 ## v0.0.14 ... (24 DECEMBER 17)
 
 ### Additions:
