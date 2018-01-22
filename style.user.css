@@ -231,7 +231,7 @@ div[class*="2pvYN"] {
   padding: 4px 0 0 5px !important;
 }
 
-/* Make cast pictures square */
+/*::: Make cast pictures square :::*/
 a[class^="PrePlayCastCell-cardLink-"],
 div[class^="TagPosterCard-card-"],
 a[class*="Tndv5"],
@@ -239,13 +239,13 @@ div[class*="RVD0D"] {
   border-radius: 0 !important;
 }
 
-/* lower actors faces a bit */
+/*::: lower actors faces a bit :::*/
 div[class^="TagPosterCard-card-"] [class^="PosterCardImg-imageContainer-"] > div,
 div[class*="RVD0D"] [class*="1Ar4M"] > div {
   background-position: 100% 30% !important;
 }
 
-/* make the controls for video player a bit transparent */
+/*::: make the controls for video player a bit transparent :::*/
 div[class^="AudioVideoFullPlayer-bottomBar-"],
 div[class^="AudioVideoStripeContainer-container-"],
 div[class^="MenuContainer-menu-"],
@@ -255,7 +255,7 @@ div[class*="3Gtlw"] {
   background-color: rgba(35, 36, 38, .5) !important;
 }
 
-/* Make background of play queue/play next normal */
+/*::: Make background of play queue/play next normal :::*/
 div[class^="FullPlayerTopControls-topControls-"],
 div[class^="AudioVideoPlayQueue-container-"],
 div[class^="AudioVideoPostPlay-container-"],
