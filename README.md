@@ -20,9 +20,9 @@
 
 ## Preview
 
-![](./images/screenshots/tv.jpg)
-![](./images/screenshots/movie.jpg)
-![](./images/screenshots/music.jpg)
+![](./images/screenshots/tv.jpg?raw=true)
+![](./images/screenshots/movie.jpg?raw=true)
+![](./images/screenshots/music.jpg?raw=true)
 
 ## Installing
 
