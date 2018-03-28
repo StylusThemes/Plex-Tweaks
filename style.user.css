@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        Plex Fixes
-@version     1.0.2
+@version     1.0.3
 @description Bringing back plex to pre-3.0.0
 @namespace   github.com/StylusThemes
 @author      StylusThemes <https://github.com/StylusThemes>
@@ -66,7 +66,7 @@ regexp("https?:\/\//*[[URL]]*/") {
 /* ||                                                                                  || */
 /* ||* Updated     : 03 / 29 / 2018                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 1.0.2                                                             || */
+/* ||* Version     : 1.0.3                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2017-2018                                                         || */
 /* ||                                                                                  || */
@@ -184,7 +184,7 @@ div[class*="1NL8g"] > div {
 [class="version-title"]::after {
   white-space: pre;
 
-  content: "\A Plex Fixes Ver. 1.0.2";
+  content: "\A Plex Fixes Ver. 1.0.3";
 }
 
 /*::: Make Users pic square :::*/
@@ -227,28 +227,6 @@ div[class*="RVD0D"] {
 div[class^="TagPosterCard-card-"] [class^="PosterCardImg-imageContainer-"] > div,
 div[class*="RVD0D"] [class*="1Ar4M"] > div {
   background-position: 100% 30% !important;
-}
-
-/*::: make the controls for video player a bit transparent :::*/
-div[class^="AudioVideoFullPlayer-bottomBar-"],
-div[class^="AudioVideoStripeContainer-container-"],
-div[class^="MenuContainer-menu-"],
-div[class*="2yixi"],
-div[class*="MI02O"],
-div[class*="3Gtlw"] {
-  background-color: rgba(35, 36, 38, .5) !important;
-}
-
-/*::: Make background of play queue/play next normal :::*/
-div[class^="FullPlayerTopControls-topControls-"],
-div[class^="AudioVideoPlayQueue-container-"],
-div[class^="AudioVideoPostPlay-container-"],
-div[class^="FullPlayerBackground-backgroundContainer-"] > div > div > div,
-div[class*="2gkcE"],
-div[class*="mD38o"],
-div[class*="1G36_"],
-div[class*="2UnXo"] > div > div > div {
-  background: rgba(31, 31, 31, 1) !important;
 }
 
 /*::: Pulsate Status :::*/ /*::: Credits to @IanCeling :::*/

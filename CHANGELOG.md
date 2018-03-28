@@ -1,9 +1,12 @@
 # Plex Fixes Changelog
 
-## v1.0.2 ... (29 MARCH 18)
+## v1.0.2/3 ... (29 MARCH 18)
 
 ### Fixes:
 `+` Fix "Contract the sidebar"
+
+### Removed:
+`-` Removed `make the controls for video player a bit transparent` and `Make background of play queue/play next normal` as they never really worked correctly to begin with
 
 ## v1.0.1 ... (28 MARCH 18)
 
