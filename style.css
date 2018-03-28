@@ -9,9 +9,9 @@ regexp("https?:\/\//*[[URL]]*/") {
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 10 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 01 / 19 / 2018                                                    || */
+/* ||* Updated     : 03 / 28 / 2018                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 1.0.0                                                             || */
+/* ||* Version     : 1.0.1                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2017-2018                                                         || */
 /* ||                                                                                  || */
@@ -25,11 +25,6 @@ regexp("https?:\/\//*[[URL]]*/") {
 
 a {
   user-select: all !important;
-}
-
-a::after,
-a::before {
-  content: "\0020" !important;
 }
 
 /*::: Main Background Image :::*/
