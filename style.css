@@ -120,17 +120,6 @@ div[class*="1NL8g"] > div {
   display: none !important;
 }
 
-/*::: Left navbar Opacity :::*/
-[class^="Sidebar-sidebar-"],
-[class*="e9phF"] {
-  background-color: rgba(0, 0, 0, .1) !important;
-}
-
-[class^="Sidebar-sidebarScroller-"],
-[class*="2owup"] {
-  background-color: rgba(0, 0, 0, .1) !important;
-}
-
 /*::: Hide The Go Premium Button :::*/
 .plex-pass-label {
   display: none !important;
@@ -140,7 +129,7 @@ div[class*="1NL8g"] > div {
 [class="version-title"]::after {
   white-space: pre;
 
-  content: "\A Plex Fixes Ver. 1.0.0";
+  content: "\A Plex Fixes Ver. 1.0.2";
 }
 
 /*::: Make Users pic square :::*/

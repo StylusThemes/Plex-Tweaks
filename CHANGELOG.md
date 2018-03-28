@@ -1,5 +1,10 @@
 # Plex Fixes Changelog
 
+## v1.0.2 ... (29 MARCH 18)
+
+### Fixes:
+`+` Fix "Contract the sidebar"
+
 ## v1.0.1 ... (28 MARCH 18)
 
 ### Fixes:
