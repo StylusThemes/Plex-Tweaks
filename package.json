@@ -3,13 +3,13 @@
   "version": "1.0.3",
   "description": "Bringing back plex to pre-3.0.0",
   "devDependencies": {
-    "css": "^2.2.1",
+    "css": "^2.2.3",
     "perfectionist": "^2.4.0",
-    "postcss": "^6.0.21",
+    "postcss": "^6.0.22",
     "semver": "^5.5.0",
-    "stylelint": "^9.1.3",
+    "stylelint": "^9.2.1",
     "stylelint-config-standard": "^18.2.0",
-    "updates": "2.4.1"
+    "updates": "2.7.3"
   },
   "scripts": {
     "build": "node build/build.js",

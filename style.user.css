@@ -53,9 +53,9 @@ CSN "No" <<<EOT
 }
 ==/UserStyle== */
 /* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
-@-moz-document regexp("https?:\/\/(app.plex.tv)\/.*"),
-regexp("https?:\/\/.*:/*[[PORT]]*/\/.*"),
-regexp("https?:\/\//*[[URL]]*/") {
+@-moz-document regexp("https?://app.plex.tv/.*"),
+regexp("https?://.*:/*[[PORT]]*//.*"),
+regexp("/*[[URL]]*/") {
 /* ++----------------------------------------------------------------------------------++ */
 /* ||                                                                                  || */
 /* ||* Name        : Plex Fixes                                                        || */
@@ -73,9 +73,9 @@ regexp("https?:\/\//*[[URL]]*/") {
 /* ++----------------------------------------------------------------------------------++ */
 }
 
-@-moz-document regexp("https?:\/\/(app.plex.tv)\/.*"),
-regexp("https?:\/\/.*:/*[[PORT]]*/\/.*"),
-regexp("https?:\/\//*[[URL]]*/") {
+@-moz-document regexp("https?://app.plex.tv/.*"),
+regexp("https?://.*:/*[[PORT]]*//.*"),
+regexp("/*[[URL]]*/") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 a {
