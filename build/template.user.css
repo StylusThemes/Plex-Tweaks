@@ -10,7 +10,7 @@
 @license     CC-BY-SA-4.0
 
 @advanced text PORT "Port Number" "32400"
-@advanced text URL "Custom URL" "example.com"
+@advanced text URL "Custom URL" "http://example.com/"
 @advanced text IMGURL "Custom Background Image for Discover Page *Works better if the image is a darker picture*" "http://example.com/example.jpg"
 
 @advanced dropdown CastL "Cast List" {
