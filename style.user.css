@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        Plex Fixes
-@version     1.0.3
+@version     1.0.4
 @description Bringing back plex to pre-3.0.0
 @namespace   github.com/StylusThemes
 @author      StylusThemes <https://github.com/StylusThemes>
@@ -55,7 +55,7 @@ CSN "No" <<<EOT
 /* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
 @-moz-document regexp("https?://app.plex.tv/.*"),
 regexp("https?://.*:/*[[PORT]]*//.*"),
-regexp("/*[[URL]]*/") {
+regexp("/*[[URL]]*/.*") {
 /* ++----------------------------------------------------------------------------------++ */
 /* ||                                                                                  || */
 /* ||* Name        : Plex Fixes                                                        || */
@@ -64,9 +64,9 @@ regexp("/*[[URL]]*/") {
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 10 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 03 / 29 / 2018                                                    || */
+/* ||* Updated     : 05 / 26 / 2018                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 1.0.3                                                             || */
+/* ||* Version     : 1.0.4                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2017-2018                                                         || */
 /* ||                                                                                  || */
@@ -75,7 +75,7 @@ regexp("/*[[URL]]*/") {
 
 @-moz-document regexp("https?://app.plex.tv/.*"),
 regexp("https?://.*:/*[[PORT]]*//.*"),
-regexp("/*[[URL]]*/") {
+regexp("/*[[URL]]*/.*") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 a {

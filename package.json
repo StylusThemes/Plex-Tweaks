@@ -1,6 +1,6 @@
 {
   "name": "plex-fixes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Bringing back plex to pre-3.0.0",
   "devDependencies": {
     "css": "^2.2.3",

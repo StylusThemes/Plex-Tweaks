@@ -1,5 +1,10 @@
 # Plex Fixes Changelog
 
+## v1.0.4 ... (26 MAY 18)
+
+### Fixes:
+`+` Fix issue with regexp url
+
 ## v1.0.2/3 ... (29 MARCH 18)
 
 ### Fixes:
