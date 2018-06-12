@@ -83,11 +83,12 @@ a {
 }
 
 /*::: Main Background Image :::*/
-.background-container [data-reactroot] div>div[style] {
+.background-container [data-reactroot] div > div[style] {
   background: rgba(31, 31, 31, 1);
   background-image: url("/*[[IMGURL]]*/") !important;
   background-position: center center;
   background-size: 100% 100% !important;
+
   image-rendering: auto;
 }
 
@@ -108,8 +109,8 @@ div[class*="3dXG6"] {
 }
 
 /*::: Image :::*/
-div[class^="PrePlayArtwork-imageContainer-"]>div,
-div[class*="3dXG6"]>div {
+div[class^="PrePlayArtwork-imageContainer-"] > div,
+div[class*="3dXG6"] > div {
   position: fixed !important;
   width: 100% !important;
   height: 100% !important;
@@ -119,14 +120,14 @@ div[class*="3dXG6"]>div {
 }
 
 /*::: Resizing adds extra divs :::*/
-div[class^="PrePlayArtwork-imageContainer-"]>div+div,
-div[class*="3dXG6"]>div+div {
+div[class^="PrePlayArtwork-imageContainer-"] > div + div,
+div[class*="3dXG6"] > div + div {
   display: none !important;
 }
 
 /*::: Item Thumbnail :::*/
-div[class^="PrePlayArtwork-imageContainer-"]+div,
-div[class*="3dXG6"]+div {
+div[class^="PrePlayArtwork-imageContainer-"] + div,
+div[class*="3dXG6"] + div {
   position: fixed !important;
   top: 180px !important;
   background-position: center !important;
@@ -153,8 +154,8 @@ div[class*="1NL8g"] {
 }
 
 /*::: Make Sure Overflow Of Summary Container is always visible :::*/
-div[class^="PrePlaySummary-summary-"]>div,
-div[class*="1NL8g"]>div {
+div[class^="PrePlaySummary-summary-"] > div,
+div[class*="1NL8g"] > div {
   overflow: visible !important;
   max-height: none !important;
 }
@@ -177,7 +178,7 @@ div[class*="1NL8g"]>div {
 }
 
 /*::: Make Users pic square :::*/
-[class^="dropdown-poster-"]>div,
+[class^="dropdown-poster-"] > div,
 [class^="card-poster"],
 [class^="AvatarImg-avatar-"],
 [class*="3Op56"] {
@@ -212,8 +213,8 @@ div[class*="RVD0D"] {
 }
 
 /*::: lower actors faces a bit :::*/
-div[class^="TagPosterCard-card-"] [class^="PosterCardImg-imageContainer-"]>div,
-div[class*="RVD0D"] [class*="1Ar4M"]>div {
+div[class^="TagPosterCard-card-"] [class^="PosterCardImg-imageContainer-"] > div,
+div[class*="RVD0D"] [class*="1Ar4M"] > div {
   background-position: 100% 30% !important;
 }
 

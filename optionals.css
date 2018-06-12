@@ -8,9 +8,9 @@ div[class*="3dQB5"] {
 
 /*::: Hover effect on CAST cards :::*/
 a[class^="PrePlayCastCell-cardLink-"]:hover,
-a[class^="PrePlayCastCell-cardLink-"]:hover>div,
+a[class^="PrePlayCastCell-cardLink-"]:hover > div,
 a[class*="Tndv5"]:hover,
-a[class*="Tndv5"]:hover>div {
+a[class*="Tndv5"]:hover > div {
   transform: scale(1.07);
 }
 
@@ -23,16 +23,16 @@ div[class*="2NcGK"] {
 }
 
 /*::: Expand 'Extras' display for movies (shows as grid instead of scroller) :::*/
-[class^="PrePlayExtrasList-extrasHubCell-"]>div:nth-child(2),
-[class^="PrePlayExtrasList-extrasHubCell-"]>div:nth-child(2)>[class^="Measure-container-"]>div>div,
-[class*="2NcGK"]>div:nth-child(2),
-[class*="2NcGK"]>div:nth-child(2)>[class*="2XznZ"]>div>div {
+[class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2),
+[class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2) > [class^="Measure-container-"] > div > div,
+[class*="2NcGK"] > div:nth-child(2),
+[class*="2NcGK"] > div:nth-child(2) > [class*="2XznZ"] > div > div {
   width: auto !important;
   height: auto !important;
 }
 
-[class^="PrePlayExtrasList-extrasHubCell-"]>div:nth-child(2)>[class^="Measure-container-"]>div>div>div,
-[class*="2NcGK"]>div:nth-child(2)>[class*="2XznZ"]>div>div>div {
+[class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2) > [class^="Measure-container-"] > div > div > div,
+[class*="2NcGK"] > div:nth-child(2) > [class*="2XznZ"] > div > div > div {
   display: inline-block;
   position: relative !important;
   margin: 10px;
