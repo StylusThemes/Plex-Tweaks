@@ -1,5 +1,10 @@
 # Plex Fixes Changelog
 
+## v1.0.5 ... (11 JUNE 18)
+
+### Changes:
+`+` No major changes, just a few tweaks to code.
+
 ## v1.0.4 ... (26 MAY 18)
 
 ### Fixes:

@@ -8,9 +8,9 @@ div[class*="3dQB5"] {
 
 /*::: Hover effect on CAST cards :::*/
 a[class^="PrePlayCastCell-cardLink-"]:hover,
-a[class^="PrePlayCastCell-cardLink-"]:hover > div,
+a[class^="PrePlayCastCell-cardLink-"]:hover>div,
 a[class*="Tndv5"]:hover,
-a[class*="Tndv5"]:hover > div {
+a[class*="Tndv5"]:hover>div {
   transform: scale(1.07);
 }
 
@@ -23,22 +23,19 @@ div[class*="2NcGK"] {
 }
 
 /*::: Expand 'Extras' display for movies (shows as grid instead of scroller) :::*/
-[class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2),
-[class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2) > [class^="Measure-container-"] > div > div,
-[class*="2NcGK"] > div:nth-child(2),
-[class*="2NcGK"] > div:nth-child(2) > [class*="2XznZ"] > div > div {
+[class^="PrePlayExtrasList-extrasHubCell-"]>div:nth-child(2),
+[class^="PrePlayExtrasList-extrasHubCell-"]>div:nth-child(2)>[class^="Measure-container-"]>div>div,
+[class*="2NcGK"]>div:nth-child(2),
+[class*="2NcGK"]>div:nth-child(2)>[class*="2XznZ"]>div>div {
   width: auto !important;
   height: auto !important;
 }
 
-[class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2) > [class^="Measure-container-"] > div > div > div,
-[class*="2NcGK"] > div:nth-child(2) > [class*="2XznZ"] > div > div > div {
+[class^="PrePlayExtrasList-extrasHubCell-"]>div:nth-child(2)>[class^="Measure-container-"]>div>div>div,
+[class*="2NcGK"]>div:nth-child(2)>[class*="2XznZ"]>div>div>div {
   display: inline-block;
-
   position: relative !important;
-
   margin: 10px;
-
   transform: translate3d(10px, 10px, 0) !important;
 }
 
@@ -58,9 +55,7 @@ div[class*="2fY8S"] {
 div[class^="MetadataPosterCard-cardContainer-"],
 div[class*="2gRcQ"] {
   box-shadow: 0 6px 26px -2px #000;
-
   transition: all 350ms;
-
   -webkit-perspective: 500px;
   perspective: 500px;
 }
@@ -69,7 +64,6 @@ div[class*="2gRcQ"] {
 div[class^="MetadataPosterCard-cardContainer-"]:hover,
 div[class*="2gRcQ"]:hover {
   box-shadow: 0 0 0 0 #000;
-
   transform: scale(.95) translateY(0);
 }
 
@@ -83,7 +77,6 @@ div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover {
 [class^="MetadataPhotoCell-photoContainer-"],
 [class*="1HkmQ"] {
   transition: all 350ms;
-
   -webkit-perspective: 500px;
   perspective: 500px;
 }
@@ -96,7 +89,6 @@ div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover {
 [class^="MetadataPhotoCell-photo-"]:hover,
 [class*="Po3Kx"]:hover {
   box-shadow: none;
-
   transform: scale(1.02);
 }
 
@@ -106,14 +98,10 @@ div[class*="M67q6"] {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-
   font-size: 18px;
   line-height: 48px;
-
   color: hsla(0, 0%, 100%, .7);
-
   box-shadow: 0 4px 16px -2px #000;
-
   transition: all 350ms;
   transform: translate(-50%, -50%) scale(.1);
 }
@@ -147,14 +135,12 @@ div[role=navigation] div {
 [class^=SidebarContainer-sidebarContainer-] {
   width: 55px !important;
   max-width: 55px !important;
-
   transition: all .5s ease !important;
 }
 
 [class^=SidebarContainer-sidebarContainer-]:hover {
   width: 240px !important;
   max-width: 240px !important;
-
   transition: all 1.5s ease !important;
 }
 
@@ -173,13 +159,11 @@ div[role=navigation] div[role=header] {
 [class^=SidebarContainer-sidebarContainer-]:hover div[role=navigation] div a div:nth-child(2),
 [class^=SidebarContainer-sidebarContainer-]:hover div[role=navigation] div[role=header] {
   font-size: 12px !important;
-
   transition: all 2s ease !important;
 }
 
 [class^=SidebarContainer-sidebarContainer-]:hover button[data-qa-id=serverMenuButton] div span {
   font-size: 14px !important;
-
   transition: all 2s ease !important;
 }
 
@@ -193,7 +177,6 @@ div[role=navigation] div[role=header] {
 [class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarLibrariesActions-actions],
 [class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarLink-children] {
   display: inline-block !important;
-
   transition: all 2s ease !important;
 }
 
