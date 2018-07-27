@@ -1,5 +1,10 @@
 # Plex Fixes Changelog
 
+## v1.0.5 ... (26 JULY 18)
+
+### Fixes:
+`+` Fixes main discover (dashboard) so it actually is back to being dark again.
+
 ## v1.0.5 ... (11 JUNE 18)
 
 ### Changes:
