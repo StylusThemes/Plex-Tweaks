@@ -1,5 +1,10 @@
 # Plex Fixes Changelog
 
+## v1.0.7 ... (01 AUGUST 18)
+
+### Fixes:
+`+` Brings inline with changes to Plex Web up to version 3.63.1
+
 ## v1.0.6 ... (26 JULY 18)
 
 ### Fixes:
