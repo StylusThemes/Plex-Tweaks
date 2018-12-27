@@ -1,5 +1,10 @@
 # Plex Fixes Changelog
 
+## v1.0.8 ... (26 DECEMBER 18)
+
+### Fixes:
+`+` Fix related lists.
+
 ## v1.0.7 ... (01 AUGUST 18)
 
 ### Fixes:

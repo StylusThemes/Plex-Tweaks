@@ -9,9 +9,9 @@ regexp("/*[[URL]]*/.*") {
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 10 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 08 / 01 / 2018                                                    || */
+/* ||* Updated     : 12 / 26 / 2018                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 1.0.7                                                             || */
+/* ||* Version     : 1.0.8                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2017-2018                                                         || */
 /* ||                                                                                  || */
@@ -120,7 +120,7 @@ div[class*="1NL8g"] > div {
 /*::: Plex Fixes Version :::*/
 [class="version-title"]::after {
   white-space: pre;
-  content: "\A Plex Fixes Ver. 1.0.7";
+  content: "\A Plex Fixes Ver. 1.0.8";
 }
 
 /*::: Make Users pic square :::*/

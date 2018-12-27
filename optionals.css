@@ -42,14 +42,18 @@ div[class*="2NcGK"] {
 /*:::::::::::::::::::::::::::::::::::::::::::::::: Related Lists ::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Hide Related List i.e Related movies|shows|Genres|People :::*/
-div[class^="PrePlayRelatedList-relatedList-"],
-div[class*="2fY8S"] {
+div[data-qa-id*="hub--movie.similar"],
+div[data-qa-id*="hub--movie.same.actor."],
+div[data-qa-id*="hub--tv.similar"],
+div[data-qa-id*="hub--tv.same.actor"],
+div[data-qa-id*="hub--tv.morefromnetwork"] {
   display: none !important;
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::: Posters ::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/*::: Posters Hover Effects :::*/ /*::: Credits to @IanCeling :::*/
+/*::: Posters Hover Effects :::*/
+/*::: Credits to @IanCeling :::*/
 
 /* Poster Shadow */
 div[class^="MetadataPosterCard-cardContainer-"],

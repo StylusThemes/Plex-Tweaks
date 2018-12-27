@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        Plex Fixes
-@version     1.0.7
+@version     1.0.8
 @description Bringing back plex to pre-3.0.0
 @namespace   github.com/StylusThemes
 @author      StylusThemes <https://github.com/StylusThemes>
@@ -33,7 +33,7 @@ EEN "Don't Expand & Don't Hide" <<<EOT
 
 @advanced dropdown RelatedL "Related Lists" {
 RLY "Hide Related Lists" <<<EOT
-div[class*="2fY8S"],div[class^=PrePlayRelatedList-relatedList-]{display:none!important} EOT;
+div[data-qa-id*="hub--movie.similar"],div[data-qa-id*="hub--movie.same.actor."],div[data-qa-id*="hub--tv.similar"],div[data-qa-id*="hub--tv.same.actor"],div[data-qa-id*="hub--tv.morefromnetwork"]{display:none!important} EOT;
 RLN "Don't Hide" <<<EOT
  EOT;
 }
@@ -64,9 +64,9 @@ regexp("/*[[URL]]*/.*") {
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 10 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 08 / 01 / 2018                                                    || */
+/* ||* Updated     : 12 / 26 / 2018                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 1.0.7                                                             || */
+/* ||* Version     : 1.0.8                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2017-2018                                                         || */
 /* ||                                                                                  || */
@@ -175,7 +175,7 @@ div[class*="1NL8g"] > div {
 /*::: Plex Fixes Version :::*/
 [class="version-title"]::after {
   white-space: pre;
-  content: "\A Plex Fixes Ver. 1.0.7";
+  content: "\A Plex Fixes Ver. 1.0.8";
 }
 
 /*::: Make Users pic square :::*/

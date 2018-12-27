@@ -33,7 +33,7 @@ EEN "Don't Expand & Don't Hide" <<<EOT
 
 @advanced dropdown RelatedL "Related Lists" {
 RLY "Hide Related Lists" <<<EOT
-div[class*="2fY8S"],div[class^=PrePlayRelatedList-relatedList-]{display:none!important} EOT;
+div[data-qa-id*="hub--movie.similar"],div[data-qa-id*="hub--movie.same.actor."],div[data-qa-id*="hub--tv.similar"],div[data-qa-id*="hub--tv.same.actor"],div[data-qa-id*="hub--tv.morefromnetwork"]{display:none!important} EOT;
 RLN "Don't Hide" <<<EOT
  EOT;
 }
