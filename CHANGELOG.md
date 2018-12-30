@@ -1,5 +1,13 @@
 # Plex Fixes Changelog
 
+## v1.1.0 ... (30 DECEMBER 18)
+
+### Removed:
+`-` Removed Port Number & Custom Url options as I can't seem to get them to work in LESS. (if anyone has any solutions other than going back to original css please let me know!)
+
+### Changes:
+`+`Rewrote theme into LESS style.
+
 ## v1.0.8 ... (26 DECEMBER 18)
 
 ### Fixes:

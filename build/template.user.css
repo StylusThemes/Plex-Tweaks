@@ -7,49 +7,14 @@
 @homepageURL https://github.com/StylusThemes/Plex-Fixes
 @supportURL  https://github.com/StylusThemes/Plex-Fixes/issues
 @updateURL   https://raw.githubusercontent.com/StylusThemes/Plex-Fixes/master/style.user.css
+@preprocessor stylus
 @license     CC-BY-SA-4.0
 
-@advanced text PORT "Port Number" "32400"
-@advanced text URL "Custom URL" "http://example.com/"
-@advanced text IMGURL "Custom Background Image for Discover Page *Works better if the image is a darker picture*" "http://example.com/example.jpg"
+@var text IMGURL "Custom Background Image for Discover Page" "'http://example.com/bkgd.jpg'"
 
-@advanced dropdown CastL "Cast List" {
-CLY "Hover Effects" <<<EOT
-a[class*=Tndv5]:hover,a[class*=Tndv5]:hover>div,a[class^=PrePlayCastCell-cardLink-]:hover,a[class^=PrePlayCastCell-cardLink-]:hover>div{transform:scale(1.07)} EOT;
-CLH "Hide Cast List" <<<EOT
-div[class*="3dQB5"],div[class^=PrePlayCastList-castList-]{display:none!important} EOT;
-CLN "No Hover Effect & Don't Hide Cast List" <<<EOT
- EOT;
-}
-
-@advanced dropdown ExtrasM "Extras" {
-EEY "Expand Movie Extras" <<<EOT
-[class*="2NcGK"]>div:nth-child(2),[class*="2NcGK"]>div:nth-child(2)>[class*="2XznZ"]>div>div,[class^=PrePlayExtrasList-extrasHubCell-]>div:nth-child(2),[class^=PrePlayExtrasList-extrasHubCell-]>div:nth-child(2)>[class^=Measure-container-]>div>div{width:auto!important;height:auto!important}[class*="2NcGK"]>div:nth-child(2)>[class*="2XznZ"]>div>div>div,[class^=PrePlayExtrasList-extrasHubCell-]>div:nth-child(2)>[class^=Measure-container-]>div>div>div{display:inline-block;position:relative!important;margin:10px;transform:translate3d(10px,10px,0)!important} EOT;
-EEH "Hide Extras" <<<EOT
-div[class*="2NcGK"],div[class^=PrePlayExtrasList-extrasHubCell-]{display:none!important} EOT;
-EEN "Don't Expand & Don't Hide" <<<EOT
- EOT;
-}
-
-@advanced dropdown RelatedL "Related Lists" {
-RLY "Hide Related Lists" <<<EOT
-div[data-qa-id*="hub--movie.similar"],div[data-qa-id*="hub--movie.same.actor."],div[data-qa-id*="hub--tv.similar"],div[data-qa-id*="hub--tv.same.actor"],div[data-qa-id*="hub--tv.morefromnetwork"]{display:none!important} EOT;
-RLN "Don't Hide" <<<EOT
- EOT;
-}
-
-@advanced dropdown PosterHE "Posters" {
-PHEY "Hover Effects" <<<EOT
-div[class^="MetadataPosterCard-cardContainer-"],div[class*="2gRcQ"]{box-shadow:0 6px 26px -2px #000;transition:all 350ms;-webkit-perspective:500px;perspective:500px}div[class^="MetadataPosterCard-cardContainer-"]:hover,div[class*="2gRcQ"]:hover{box-shadow:0 0 0 0 #000;transform:scale(.95) translateY(0)}div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover,div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover{transform:scale(.97) translateY(-5px)}[class^="MetadataPhotoCell-photoContainer-"],[class*="1HkmQ"]{transition:all 350ms;-webkit-perspective:500px;perspective:500px}[class^="MetadataPhotoCell-photoContainer-"]:hover,[class*="1HkmQ"]{transform:scale(.95) translateY(0)}[class^="MetadataPhotoCell-photo-"]:hover,[class*="Po3Kx"]:hover{box-shadow:none;transform:scale(1.02)}div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="M67q6"]{border-radius:50%;width:50px;height:50px;font-size:18px;line-height:48px;color:hsla(0, 0%, 100%, .7);box-shadow:0 4px 16px -2px #000;transition:all 350ms;transform:translate(-50%, -50%) scale(.1)}div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPosterCardOverlay-playCircle-"],div[class*="2gRcQ"]:hover div[class*="M67q6"]{transform:translate(-50%, -50%) scale(1.2)}div[class^="MetadataPosterCard-cardContainer-"]:hover [class^=plex-icon-play-],div[class*="2gRcQ"]:hover [class^=plex-icon-play-]{font-size:30px} EOT;
-PHEN "No Hover Effects" <<<EOT
- EOT;
-}
-
-@advanced dropdown CompactSB "Contract The Sidebar To Save Screen Space [Expands Back Out On Hovering Over The Sidebar]" {
-CSY "Yes" <<<EOT
-.page-container{margin-left:0!important}div[role=navigation] div a{overflow:visible}div[role=navigation] div{padding-right:0}[class^=SidebarContainer-sidebarContainer-]{width:55px!important;max-width:55px!important;transition:all .5s ease!important}[class^=SidebarContainer-sidebarContainer-]:hover{width:240px!important;max-width:240px!important;transition:all 1.5s ease!important}[class^=SidebarLink-title],[class^=SidebarList-sidebarListHeader],[class^=SidebarServerLibraries-librariesTitle],button[data-qa-id=serverMenuButton] div span,div[role=navigation] div a div:nth-child(2),div[role=navigation] div[role=header]{font-size:0!important}[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarLink-title],[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarList-sidebarListHeader],[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarServerLibraries-librariesTitle],[class^=SidebarContainer-sidebarContainer-]:hover div[role=navigation] div a div:nth-child(2),[class^=SidebarContainer-sidebarContainer-]:hover div[role=navigation] div[role=header]{font-size:12px!important;transition:all 2s ease!important}[class^=SidebarContainer-sidebarContainer-]:hover button[data-qa-id=serverMenuButton] div span{font-size:14px!important;transition:all 2s ease!important}[class^=DisclosureArrow-disclosureArrow-],[class^=SidebarLibrariesActions-actions],[class^=SidebarLink-children]{display:none!important}[class^=SidebarContainer-sidebarContainer-]:hover [class^=DisclosureArrow-disclosureArrow],[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarLibrariesActions-actions],[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarLink-children]{display:inline-block!important;transition:all 2s ease!important}[class^=SidebarLibraryItem-action]{width:0!important} EOT;
-CSN "No" <<<EOT
- EOT;
-}
+@var select CastL "Cast List" ["CLY:Hover Effects", "CLH:Hide Cast List", "CLN:No Hover Effect & Don't Hide"]
+@var select ExtrasM "Extras" ["EEY:Expand Movie Extras", "EEH:Hide Extras", "EEN:Don't Expand & Don't Hide"]
+@var select RelatedL "Related Lists" ["RLY:Hide Related Lists", "RLN:Don't Hide"]
+@var select PosterHE "Posters" ["PHEY:Hover Effects", "PHEN:No Hover Effects"]
+@var select CompactSB "Contract The Sidebar To Save Screen Space" ["CSY:Yes", "CSN:No"]
 ==/UserStyle== */
-/* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
