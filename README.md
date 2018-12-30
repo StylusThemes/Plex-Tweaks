@@ -76,7 +76,7 @@ If you would like to contribute to this repository, please...
 [9]: https://user-images.githubusercontent.com/136959/42383736-c4cb0db8-80fd-11e8-91ca-12bae108bccc.png
 [10]: https://github.com/StylusThemes/Plex-Fixes/fork
 [11]: https://user-images.githubusercontent.com/136959/42401932-9ee9cae0-813d-11e8-8691-16e29a85d3b9.png
-[12]: https://github.com/StylusThemes/Plex-Fixes/fork
+[12]: https://github.com/StylusThemes/Plex-Fixes/releases
 
 <!-- STYLUS DOWNLOADS -->
 [STYChrome]: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
