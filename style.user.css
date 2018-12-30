@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name        Plex Fixes
-@version     1.1.0
-@description Bringing back plex to pre-3.0.0
-@namespace   github.com/StylusThemes
-@author      StylusThemes <https://github.com/StylusThemes>
-@homepageURL https://github.com/StylusThemes/Plex-Fixes
-@supportURL  https://github.com/StylusThemes/Plex-Fixes/issues
-@updateURL   https://raw.githubusercontent.com/StylusThemes/Plex-Fixes/master/style.user.css
-@preprocessor stylus
-@license     CC-BY-SA-4.0
+@name           Plex Fixes
+@version        1.1.0
+@namespace      https://github.com/StylusThemes
+@description    Bringing back plex to pre-3.0.0
+@author         StylusThemes <https://github.com/StylusThemes>
+@homepageURL    https://github.com/StylusThemes/Plex-Fixes
+@supportURL     https://github.com/StylusThemes/Plex-Fixes/issues
+@updateURL      https://raw.githubusercontent.com/StylusThemes/Plex-Fixes/master/style.user.css
+@preprocessor   stylus
+@license        CC-BY-SA-4.0
 
 @var text IMGURL "Custom Background Image for Discover Page" "'http://example.com/bkgd.jpg'"
 
@@ -18,6 +18,7 @@
 @var select PosterHE "Posters" ["PHEY:Hover Effects", "PHEN:No Hover Effects"]
 @var select CompactSB "Contract The Sidebar To Save Screen Space" ["CSY:Yes", "CSN:No"]
 ==/UserStyle== */
+
 @-moz-document regexp("https?://app.plex.tv/.*"), regexp("((http(s?)):\\/\\/)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(32400)+(.*)") {
   /* ++----------------------------------------------------------------------------------++ */
   /* ||                                                                                  || */

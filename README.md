@@ -44,7 +44,7 @@ If you would like to contribute to this repository, please...
 [1]: #
 [size]: https://flat.badgen.net/badgesize/normal/StylusThemes/Plex-Fixes/master/style.user.css
 [install]: https://flat.badgen.net/badge/install%20directly%20from/GitHub/00ADAD "Click here!"
-[2]: https://rebrand.ly/plex-fixes
+[2]: https://rebrand.ly/InstallPlex-Fixes
 [stars]: https://flat.badgen.net/github/stars/StylusThemes/Plex-Fixes
 [3]: https://github.com/StylusThemes/Plex-Fixes/stargazers
 [watchers]: https://flat.badgen.net/github/watchers/StylusThemes/Plex-Fixes
