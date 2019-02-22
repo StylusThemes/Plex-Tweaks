@@ -17,5 +17,5 @@
 @var select RelatedL "Related Lists" ["RLY:Hide Related Lists", "RLN:Don't Hide"]
 @var select PosterHE "Posters" ["PHEY:Hover Effects", "PHEN:No Hover Effects"]
 @var select CompactSB "Contract The Sidebar To Save Screen Space" ["CSY:Yes", "CSN:No"]
-@var select VARF "Zooms in on Blu-ray rip's that haven't been cropped to remove black bars" ["VARFY:Yes", "VARFN:No"]
+@var select VARF "Zooms in on Blu-ray rip's that haven't been cropped to remove black bars" ["VARFN:No", "VARFY:Yes"]
 ==/UserStyle== */
