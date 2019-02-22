@@ -8,9 +8,9 @@
   /* ||                                                                                  || */
   /* ||* Created     : 03 / 10 / 2017                                                    || */
   /* ||                                                                                  || */
-  /* ||* Updated     : 12 / 30 / 2018                                                    || */
+  /* ||* Updated     : 02 / 21 / 2019                                                    || */
   /* ||                                                                                  || */
-  /* ||* Version     : 1.1.0                                                             || */
+  /* ||* Version     : 1.1.1                                                             || */
   /* ||                                                                                  || */
   /* ||* Copyright   : 2017-2019                                                         || */
   /* ||                                                                                  || */
@@ -272,6 +272,13 @@ div[data-qa-id*="hub--tv.similar"],
 div[data-qa-id*="hub--tv.same.actor"],
 div[data-qa-id*="hub--tv.morefromnetwork"] {
   display: none !important;
+}
+}
+
+if VARF == 'VARFY' {
+/*::: Zooms in on Blu-ray rip's that haven't been cropped to remove black bars :::*/
+[class^="AudioVideoPlayerView-container"] video {
+  -webkit-transform: scale(1.13);
 }
 }
 

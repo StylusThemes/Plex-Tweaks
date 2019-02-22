@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Plex Fixes
-@version        1.1.0
+@version        1.1.1
 @namespace      https://github.com/StylusThemes
 @description    Bringing back plex to pre-3.0.0
 @author         StylusThemes <https://github.com/StylusThemes>
@@ -17,6 +17,7 @@
 @var select RelatedL "Related Lists" ["RLY:Hide Related Lists", "RLN:Don't Hide"]
 @var select PosterHE "Posters" ["PHEY:Hover Effects", "PHEN:No Hover Effects"]
 @var select CompactSB "Contract The Sidebar To Save Screen Space" ["CSY:Yes", "CSN:No"]
+@var select VARF "Zooms in on Blu-ray rip's that haven't been cropped to remove black bars" ["VARFY:Yes", "VARFN:No"]
 ==/UserStyle== */
 
 @-moz-document regexp("https?://app.plex.tv/.*"), regexp("((http(s?)):\\/\\/)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(32400)+(.*)") {
@@ -28,9 +29,9 @@
   /* ||                                                                                  || */
   /* ||* Created     : 03 / 10 / 2017                                                    || */
   /* ||                                                                                  || */
-  /* ||* Updated     : 12 / 30 / 2018                                                    || */
+  /* ||* Updated     : 02 / 21 / 2019                                                    || */
   /* ||                                                                                  || */
-  /* ||* Version     : 1.1.0                                                             || */
+  /* ||* Version     : 1.1.1                                                             || */
   /* ||                                                                                  || */
   /* ||* Copyright   : 2017-2019                                                         || */
   /* ||                                                                                  || */
@@ -292,6 +293,13 @@ div[data-qa-id*="hub--tv.similar"],
 div[data-qa-id*="hub--tv.same.actor"],
 div[data-qa-id*="hub--tv.morefromnetwork"] {
   display: none !important;
+}
+}
+
+if VARF == 'VARFY' {
+/*::: Zooms in on Blu-ray rip's that haven't been cropped to remove black bars :::*/
+[class^="AudioVideoPlayerView-container"] video {
+  -webkit-transform: scale(1.13);
 }
 }
 

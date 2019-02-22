@@ -1,5 +1,10 @@
 # Plex Fixes Changelog
 
+## v1.1.1 ... (21 FEBRUARY 19)
+
+### Additions:
+`+` Added option to zoom in on Blu-ray rip's that haven't been cropped to remove black bars
+
 ## v1.1.0 ... (30 DECEMBER 18)
 
 ### Removed:

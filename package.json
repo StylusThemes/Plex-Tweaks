@@ -1,16 +1,16 @@
 {
   "name": "plex-fixes",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Bringing back plex to pre-3.0.0",
   "devDependencies": {
     "css": "^2.2.4",
     "perfectionist": "^2.4.0",
-    "postcss": "^7.0.7",
-    "postcss-syntax": "^0.34.0",
+    "postcss": "^7.0.14",
+    "postcss-syntax": "^0.36.2",
     "semver": "^5.6.0",
-    "stylelint": "^9.9.0",
+    "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
-    "updates": "6.0.3"
+    "updates": "7.1.1"
   },
   "scripts": {
     "build": "node build/build.js",
