@@ -1,0 +1,5 @@
+/* zoom-black-bar */
+/*::: Zooms in on Blu-ray rip's that haven't been cropped to remove black bars :::*/
+[class^="AudioVideoPlayerView-container"] video {
+  -webkit-transform: scale(1.13);
+}
