@@ -4,6 +4,7 @@
 
 ### Changes:
 `+` Reverted `Rewrote theme into LESS style.` due to the fact that I wanted to bring back the `Port Number & Custom Url options`.
+
 `+` Changed how I build the style.
 
 ## v1.1.1 ... (21 FEBRUARY 19)
