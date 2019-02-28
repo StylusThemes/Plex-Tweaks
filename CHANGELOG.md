@@ -1,6 +1,9 @@
 # Plex Fixes Changelog
 
-## v1.2.0 ... (28 FEBRUARY 19)
+## v1.2.0/1 ... (28 FEBRUARY 19)
+
+### Additions:
+`+` Added option to change how a lot of icons look. You will need `Segoe MDL2 Assets Font` to make this work.
 
 ### Changes:
 `+` Reverted `Rewrote theme into LESS style.` due to the fact that I wanted to bring back the `Port Number & Custom Url options`.

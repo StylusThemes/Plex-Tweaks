@@ -99,7 +99,7 @@ div[class*="1NL8g"] > div {
 /*::: Plex Fixes Version :::*/
 [class="version-title"]::after {
   white-space: pre;
-  content: "\A Plex Fixes - Version 1.2.0";
+  content: "\A Plex Fixes - Version 1.2.1";
 }
 
 /*::: Make Users pic square :::*/
@@ -198,4 +198,6 @@ div[class*="RVD0D"] [class*="1Ar4M"] > div {
 /*[[CompactSB]]*/
 
 /*[[VARF]]*/
+
+/*[[NI]]*/
 }

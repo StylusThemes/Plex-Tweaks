@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex Fixes
-@version      1.2.0
+@version      1.2.1
 @description  Bringing back plex to pre-3.0.0
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -53,10 +53,17 @@ CSN "No" <<<EOT
 }
 
 @advanced dropdown VARF "Zoom in on Blu-ray rip's that haven't been cropped to remove black bars" {
-No "No" <<<EOT
+VARFN "No" <<<EOT
  EOT;
-Yes "Yes" <<<EOT
+VARFY "Yes" <<<EOT
 [class^=AudioVideoPlayerView-container] video{-webkit-transform:scale(1.13)} EOT;
+}
+
+@advanced dropdown NI "Different Icon Font [Need Segoe MDL2 Assets Font Installed]" {
+NIN "No" <<<EOT
+ EOT;
+NIY "Yes" <<<EOT
+.glyphicon,[class*=" plex-icon-"],[class^=plex-icon-]{font-family:"Segoe MDL2 Assets"}.glyphicon.settings:before{content:"\E115"}.glyphicon.chevron-left:before,.plex-icon-navbar-back-560:before{content:"\E0C4"}.glyphicon.home:before,.plex-icon-navbar-home-560:before{content:"\E10F"}.glyphicon.cardio:before{content:"\E9D9"}.plex-icon-navbar-activity-560:before,.plex-icon-status-560:before{content:"\F61F"}.plex-icon-navbar-settings-560:before,.plex-icon-settings-560:before{content:"\E115"}.plex-icon-playlists-560:before{content:"\E14C"}.plex-icon-movies-560:before{content:"\E8B2"}.plex-icon-shows-560:before{content:"\E7F4"}.plex-icon-watch-later-560:before{content:"\E81C"}.plex-icon-channels-560:before{content:"\F0E2"}.plex-icon-recommended-560:before{content:"\E19F"}.plex-icon-companion-cast:before{content:"\EC15"}.plex-icon-hub-prev-560:before{content:"\E0E2"}.plex-icon-hub-next-560:before{content:"\E0E3"}.plex-icon-play-560:before,.plex-icon-toolbar-play-560:before{content:"\E768"}.plex-icon-edit-560:before{content:"\E104"}.plex-icon-more-560:before{content:"\E10C"}.plex-icon-lock-560:before{content:"\E1F6"}.plex-icon-search-560:before{content:"\E1A3"}.plex-icon-toolbar-grid-560:before{content:"\E138"}.plex-icon-files-560:before{content:"\E158"}.plex-icon-selected-560:before{content:"\E10B"}.plex-icon-toolbar-shuffle-560:before{content:"\E8B1"}.plex-icon-toolbar-more-560:before{content:"\E10C"}.plex-icon-close-560:before{content:"\E10A"}.plex-icon-sort-ascending-560:before{content:"\E74A"}.plex-icon-sort-descending-560:before{content:"\E74B"}.plex-icon-star-full-560:before{content:"\E249"}.plex-icon-star-empty-560:before{content:"\E24A"}.plex-icon-star-dot-560:before{content:"\E915"}.plex-icon-toolbar-artwork-560:before{content:"\EB9F"}.glyphicon.bullhorn:before{content:"\E789"}.glyphicon.imac:before{content:"\E770"}.glyphicon.ok-2:before{content:"\E10B"}.glyphicon.upload:before{content:"\E117"}.glyphicon.circle-ok:before{content:"\E930"}.glyphicon.remove-2:before{content:"\E10A"}.glyphicon.pencil:before{content:"\E104"}.glyphicon.unlock:before{content:"\E785"}.glyphicon.left-arrow:before{content:"\E112"}.glyphicon.circle-exclamation-mark:before{content:"\E783"}.glyphicon.globe:before{content:"\E909"}.glyphicon.circle-arrow-top:before{content:"\EE77"}.glyphicon.show-lines:before{content:"\E76F"}.glyphicon.cogwheel:before{content:"\E115"}.plex-icon-marketing-dvr-560:before{content:"\E954"}.glyphicon.circle-question-mark:before{content:"\E783"}.plex-icon-player-fullscreen-560:before{content:"\E740"}.plex-icon-player-companion-cast-560:before,.plex-icon-remote-player-off-560:before{content:"\EC15"}.plex-icon-player-minimize-560:before{content:"\E0A1"}.plex-icon-player-pause-560:before{content:"\E103"}.plex-icon-player-skip-forward-560:before{content:"\ED3D"}.plex-icon-player-skip-back-560:before{content:"\ED3C"}.plex-icon-player-next-560:before{content:"\E893"}.plex-icon-player-prev-560:before{content:"\E892"}.plex-icon-player-shuffle-560:before{content:"\E8B1"}.plex-icon-player-repeat-560:before{content:"\E1CD"}.plex-icon-player-repeat-one-560:before{content:"\E1CC"}.plex-icon-player-more-560:before{content:"\E10C"}.plex-icon-player-video-settings-560:before{content:"\E115"}.plex-icon-player-queue-560:before{content:"\EA37"}.plex-icon-player-volume-high-560:before{content:"\E995"}.plex-icon-player-volume-mid-560:before{content:"\E994"}.plex-icon-player-volume-low-560:before{content:"\E993"}.plex-icon-player-volume-off-560:before{content:"\E992"}.plex-icon-add-560:before{content:"\E109"}.plex-icon-player-play-560:before{content:"\E102"}.plex-icon-page-prev-560:before{content:"\E0A6"}.plex-icon-page-next-560:before{content:"\E0AB"}.plex-icon-toolbar-sync-560:before{content:"\E117"}.plex-icon-toolbar-edit-560:before{content:"\E70F"}.plex-icon-toolbar-watched-toggle-560:before{content:"\E052"}.plex-icon-toolbar-add-to-playlist-560:before,.plex-icon-toolbar-column-560:before{content:"\E14C"}.glyphicon.iphone:before{content:"\E25A"}.glyphicon.cloud:before{content:"\E753"}.plex-icon-toolbar-detail-560:before{content:"\E15C"}.plex-icon-remove-560:before{content:"\E10A"}.glyphicon.circle-info:before{content:"\E946"}.plex-icon-add-to-playlist:before{content:"\E1DA"}.glyphicon.lock:before{content:"\E1F6"}.glyphicon.picture:before{content:"\EB9F"}.glyphicon.parents:before{content:"\E716"}.glyphicon.tags:before{content:"\E1CB"}.glyphicon.align-center:before{content:"\E1A1"}.plex-icon-pp-badge-560:before{content:"\ECA7"}.glyphicon.crown:before{content:"\EA38"}.plex-icon-music-560:before{content:"\E189"}.plex-icon-photos-560:before{content:"\E114"}.plex-icon-clips-560:before{content:"\E116"}.glyphicon.folder-open:before,.glyphicon.folder-plus:before{content:"\E1DA"}.plex-icon-player-expand-560:before{content:"\E740"}.plex-icon-alert-560:before{content:"\E7BA"}.glyphicon.nameplate:before{content:"\E13E"}.glyphicon.certificate:before{content:"\EB95"}.plex-icon-tagging-560:before{content:"\E1CB"}.glyphicon.download:before{content:"\E118"}.glyphicon.chevron-right:before{content:"\E0AB"}.glyphicon.repeat:before{content:"\E149"}.glyphicon.plus:before{content:"\E109"}.glyphicon.bin:before{content:"\E107"}.plex-icon-toolbar-played-toggle-560:before{content:"\E052"}.plex-icon-reload-560:before{content:"\E149"}.plex-icon-help-560:before{content:"\E9CE"}.glyphicon.keyboard-wireless:before{content:"\E144"}.glyphicon.user:before{content:"\E13D"}.glyphicon.ban:before{content:"\E25B"}.glyphicon.chevron-down:before,.glyphicon.chevron-up:before{content:"\E09B"}.plex-icon-toolbar-play-trailer-560:before{content:"\E29B"}.plex-icon-player-chapters-560:before{content:"\ECA5"}.plex-icon-unselected-560:before{content:"\ED66"}.glyphicon.restart:before{content:"\E9F3"}.plex-icon-player-previous-track-560:before{content:"\E100"}.plex-icon-player-next-track-560:before{content:"\E101"}.plex-icon-player-stop-560:before{content:"\E10A"}.plex-icon-player-settings-560:before{content:"\E115"}.plex-icon-player-collapse-560:before{content:"\E09D"}.plex-icon-personal-cloud-560:before{content:"\E753"} EOT;
 }
 ==/UserStyle== */
 @-moz-document regexp("https?://app.plex.tv/.*"), regexp("https?://.*:/*[[PORT]]*//.*"), regexp("/*[[URL]]*/.*") {
@@ -160,7 +167,7 @@ div[class*="1NL8g"] > div {
 /*::: Plex Fixes Version :::*/
 [class="version-title"]::after {
   white-space: pre;
-  content: "\A Plex Fixes - Version 1.2.0";
+  content: "\A Plex Fixes - Version 1.2.1";
 }
 
 /*::: Make Users pic square :::*/
@@ -259,4 +266,6 @@ div[class*="RVD0D"] [class*="1Ar4M"] > div {
 /*[[CompactSB]]*/
 
 /*[[VARF]]*/
+
+/*[[NI]]*/
 }

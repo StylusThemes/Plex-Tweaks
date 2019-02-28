@@ -53,9 +53,16 @@ CSN "No" <<<EOT
 }
 
 @advanced dropdown VARF "Zoom in on Blu-ray rip's that haven't been cropped to remove black bars" {
-No "No" <<<EOT
+VARFN "No" <<<EOT
  EOT;
-Yes "Yes" <<<EOT
+VARFY "Yes" <<<EOT
 {{zoom-black-bar}} EOT;
+}
+
+@advanced dropdown NI "Different Icon Font [Need Segoe MDL2 Assets Font Installed]" {
+NIN "No" <<<EOT
+ EOT;
+NIY "Yes" <<<EOT
+{{new-icons}} EOT;
 }
 ==/UserStyle== */
