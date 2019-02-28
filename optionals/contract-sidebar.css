@@ -1,0 +1,66 @@
+/* contract-sidebar */
+/*::: kill container margin and add transition speed :::*/
+/*::: Contract the sidebar to save screen space [Expands back out on hovering over the sidebar] :::*/
+.page-container {
+  margin-left: 0 !important;
+}
+
+div[role=navigation] div a {
+  overflow: visible;
+}
+
+div[role=navigation] div {
+  padding-right: 0;
+}
+
+[class^=SidebarContainer-sidebarContainer-] {
+  width: 55px !important;
+  max-width: 55px !important;
+  transition: all .5s ease !important;
+}
+
+[class^=SidebarContainer-sidebarContainer-]:hover {
+  width: 240px !important;
+  max-width: 240px !important;
+  transition: all 1.5s ease !important;
+}
+
+[class^=SidebarLink-title],
+[class^=SidebarList-sidebarListHeader],
+[class^=SidebarServerLibraries-librariesTitle],
+button[data-qa-id=serverMenuButton] div span,
+div[role=navigation] div a div:nth-child(2),
+div[role=navigation] div[role=header] {
+  font-size: 0 !important;
+}
+
+[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarLink-title],
+[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarList-sidebarListHeader],
+[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarServerLibraries-librariesTitle],
+[class^=SidebarContainer-sidebarContainer-]:hover div[role=navigation] div a div:nth-child(2),
+[class^=SidebarContainer-sidebarContainer-]:hover div[role=navigation] div[role=header] {
+  font-size: 12px !important;
+  transition: all 2s ease !important;
+}
+
+[class^=SidebarContainer-sidebarContainer-]:hover button[data-qa-id=serverMenuButton] div span {
+  font-size: 14px !important;
+  transition: all 2s ease !important;
+}
+
+[class^=DisclosureArrow-disclosureArrow-],
+[class^=SidebarLibrariesActions-actions],
+[class^=SidebarLink-children] {
+  display: none !important;
+}
+
+[class^=SidebarContainer-sidebarContainer-]:hover [class^=DisclosureArrow-disclosureArrow],
+[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarLibrariesActions-actions],
+[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarLink-children] {
+  display: inline-block !important;
+  transition: all 2s ease !important;
+}
+
+[class^=SidebarLibraryItem-action] {
+  width: 0 !important;
+}

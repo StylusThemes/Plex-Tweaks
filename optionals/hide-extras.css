@@ -1,0 +1,5 @@
+/* hide-extras */
+/*::: Hide Movie Extras (dunno if there are tv extras or not as I could never get extras for tv shows to show up) :::*/
+div[class^="PrePlayExtrasList-extrasHubCell-"] {
+  display: none !important;
+}

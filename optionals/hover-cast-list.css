@@ -1,0 +1,12 @@
+/* hover-cast-list */
+/*::: Hover effect on CAST cards :::*/
+a[class^="PrePlayCastCell-cardLink-"]:hover,
+a[class^="PrePlayCastCell-cardLink-"]:hover > div,
+a[class*="Tndv5"]:hover > div,
+a[class*="Tndv5"]:hover {
+  transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -o-transform: scale(1.07);
+}
