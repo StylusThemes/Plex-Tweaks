@@ -1,5 +1,10 @@
 # Plex Fixes Changelog
 
+## v1.2.2 ... (16 MAY 19)
+
+### Removed:
+`-` Removed new icons
+
 ## v1.2.0/1 ... (28 FEBRUARY 19)
 
 ### Additions:

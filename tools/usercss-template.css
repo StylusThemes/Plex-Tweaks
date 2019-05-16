@@ -58,11 +58,4 @@ VARFN "No" <<<EOT
 VARFY "Yes" <<<EOT
 {{zoom-black-bar}} EOT;
 }
-
-@advanced dropdown NI "Different Icon Font [Need Segoe MDL2 Assets Font Installed]" {
-NIN "No" <<<EOT
- EOT;
-NIY "Yes" <<<EOT
-{{new-icons}} EOT;
-}
 ==/UserStyle== */
