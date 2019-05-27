@@ -1,7 +1,3 @@
-# lockfiles
-package-lock.json
-yarn.lock
-
 # temp stuff
 tmp/
 *.tmp

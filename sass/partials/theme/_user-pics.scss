@@ -1,0 +1,12 @@
+/*::: Make Users pic square :::*/
+[class^="dropdown-poster-"] {
+   > div {
+    border-radius: 0;
+  }
+}
+
+[class^="card-poster"],
+[class^="AvatarImg-avatar-"],
+[class*="3Op56"] {
+  border-radius: 0;
+}

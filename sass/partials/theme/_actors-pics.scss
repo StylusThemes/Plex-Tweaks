@@ -1,0 +1,18 @@
+/*::: Make cast pictures square :::*/
+a[class^="PrePlayCastCell-cardLink-"],
+div[class^="TagPosterCard-card-"],
+a[class*="Tndv5"],
+div[class*="RVD0D"] {
+  border-radius: 0 !important;
+}
+
+/*::: lower actors faces a bit :::*/
+div[class^="TagPosterCard-card-"],
+div[class*="RVD0D"] {
+  [class^="PosterCardImg-imageContainer-"],
+  [class*="1Ar4M"] {
+     > div {
+      background-position: 100% 30% !important;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@-moz-document regexp("https?://app.plex.tv/.*"), regexp("https?://.*:/*[[PORT]]*//.*"), regexp("/*[[URL]]*/.*") {
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+@import 'partials/theme/text-select';
+@import 'partials/theme/background-image';
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::: NEW ADDITIONS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+@import 'partials/theme/summary';
+@import 'partials/theme/premium';
+@import 'partials/version';
+@import 'partials/theme/user-pics';
+@import 'partials/theme/dashboard';
+@import 'partials/theme/actors-pics';
+@import 'partials/theme/navbar';
+/*[[CastL]]*/
+/*[[ExtrasM]]*/
+/*[[RelatedL]]*/
+/*[[PosterHE]]*/
+/*[[CompactSB]]*/
+/*[[VARF]]*/
+}

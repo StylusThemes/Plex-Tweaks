@@ -1,5 +1,10 @@
 # Plex Fixes Changelog
 
+## v1.2.3 ... (Not Released Yet)
+
+### Removed:
+`-` Removed contract side bar due to the fact that you can now contract the side bar in webUI version "3.100.1"
+
 ## v1.2.2 ... (16 MAY 19)
 
 ### Removed:
