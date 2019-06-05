@@ -2,7 +2,7 @@
 tmp/
 *.tmp
 .bak_files/
-
+ideas.txt
 
 # logs
 *.stackdump
