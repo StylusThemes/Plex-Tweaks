@@ -25,20 +25,23 @@ gulp.task( 'autoprefix', function () {
 gulp.task( 'minify-css', function () {
   return gulp.src( './css/optionals/*.css' )
     .pipe( cleanCSS() )
-    .pipe( gulp.dest( './css/optionals/minified' ) )
+    .pipe( rename( {
+      suffix: '.min'
+    } ) )
+    .pipe( gulp.dest( './css/optionals/min' ) )
 } );
 
 gulp.task( 'usercss', function () {
   return gulp.src( './css/usercss-template.css' )
     .pipe( insert( {
       '{{theme}}': './css/theme.css',
-      '{{hover-cast-list}}': './css/optionals/minified/hover-cast-list.css',
-      '{{hide-cast-list}}': './css/optionals/minified/hide-cast-list.css',
-      '{{expand-movie-extras}}': './css/optionals/minified/expand-movie-extras.css',
-      '{{hide-extras}}': './css/optionals/minified/hide-extras.css',
-      '{{hide-related-lists}}': './css/optionals/minified/hide-related-lists.css',
-      '{{hover-posters}}': './css/optionals/minified/hover-posters.css',
-      '{{zoom-black-bar}}': './css/optionals/minified/zoom-black-bar.css'
+      '{{hover-cast-list}}': './css/optionals/min/hover-cast-list.min.css',
+      '{{hide-cast-list}}': './css/optionals/min/hide-cast-list.min.css',
+      '{{expand-movie-extras}}': './css/optionals/min/expand-movie-extras.min.css',
+      '{{hide-extras}}': './css/optionals/min/hide-extras.min.css',
+      '{{hide-related-lists}}': './css/optionals/min/hide-related-lists.min.css',
+      '{{hover-posters}}': './css/optionals/min/hover-posters.min.css',
+      '{{zoom-black-bar}}': './css/optionals/min/zoom-black-bar.min.css'
     } ) )
     .pipe( rename( 'style.user.css' ) )
     .pipe( beautify.css( {

@@ -25,8 +25,7 @@
     "updates": "^8.1.0"
   },
   "scripts": {
-    "authors": "bash tools/authors",
     "update": "updates -cu && npm install",
-    "usercss": "gulp default"
+    "start": "gulp default"
   }
 }
