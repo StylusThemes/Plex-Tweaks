@@ -1,4 +1,4 @@
-/*::: Max Width Of Summary Container :::*/
+// Max Width Of Summary Container
 div[class^="PrePlaySummary-summary-"],
 div[class*="1NL8g"] {
   margin-bottom: 5px;
@@ -6,7 +6,7 @@ div[class*="1NL8g"] {
   font-size: 15px;
 }
 
-/*::: Make Sure Overflow Of Summary Container is always visible :::*/
+// Make Sure Overflow Of Summary Container is always visible
 div[class^="PrePlaySummary-summary-"],
 div[class*="1NL8g"] {
   > div {
@@ -15,7 +15,7 @@ div[class*="1NL8g"] {
   }
 }
 
-/*::: Hide Read More Button Since It's Useless Now :::*/
+// Hide Read More Button Since It's Useless Now
 [class^="CollapsibleText-readMore-"],
 [class*="1bRJm"] {
   display: none !important;

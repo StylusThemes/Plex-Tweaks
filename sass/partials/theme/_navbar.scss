@@ -1,16 +1,16 @@
-/*::: Navbar height :::*/
+// Navbar height
 [class*="NavBar-container-"],
 [class*="1T0BJ"] {
   height: 40px;
 }
 
-/*::: Move navbar Activity Button number :::*/
+// Move navbar Activity Button number
 [class*="NavBarActivityButton-label-"],
 [class*="2ZN0g"] {
   top: 10px;
 }
 
-/*::: Resize navbar search box :::*/
+// Resize navbar search box
 [class*="QuickSearchInput-container-"],
 [class*="QuickSearch-container-"],
 [class*="1HiCo"],
@@ -18,7 +18,7 @@
   height: 30px;
 }
 
-/*::: Pulsate Status :::*/
+// Pulsate Status
 [class*="NavBarActivityButton-isActive-"] {
   [class*="NavBarActivityButton-activityIcon-"] {
     opacity: 0.1;

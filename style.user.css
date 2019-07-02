@@ -58,11 +58,12 @@ regexp("/*[[URL]]*/.*") {
 
   /*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
   a {
+    -webkit-user-select: all !important;
     -moz-user-select: all !important;
+    -ms-user-select: all !important;
     user-select: all !important;
   }
 
-  /*::: Main Background Image :::*/
   .background-container>[class^="FullPage-container-"] div>div {
     background: #1f1f1f;
     background-image: url("/*[[IMGURL]]*/") !important;
@@ -71,7 +72,6 @@ regexp("/*[[URL]]*/.*") {
     image-rendering: auto;
   }
 
-  /*::: Image Container :::*/
   div[class^="PrePlayArtwork-imageContainer-"],
   div[class*="3dXG6"] {
     position: fixed !important;
@@ -87,7 +87,6 @@ regexp("/*[[URL]]*/.*") {
     -webkit-animation: plexbgfadein 0.6s ease-in;
   }
 
-  /*::: Image :::*/
   div[class^="PrePlayArtwork-imageContainer-"]>div,
   div[class*="3dXG6"]>div {
     position: fixed !important;
@@ -98,13 +97,11 @@ regexp("/*[[URL]]*/.*") {
     opacity: 0.25 !important;
   }
 
-  /*::: Resizing adds extra divs :::*/
   div[class^="PrePlayArtwork-imageContainer-"]>div+div,
   div[class*="3dXG6"]>div+div {
     display: none !important;
   }
 
-  /*::: Item Thumbnail :::*/
   div[class^="PrePlayArtwork-imageContainer-"]+div,
   div[class*="3dXG6"]+div {
     position: fixed !important;
@@ -112,7 +109,6 @@ regexp("/*[[URL]]*/.*") {
     background-position: center !important;
   }
 
-  /*::: Background Fade-in :::*/
   @-webkit-keyframes plexbgfadein {
     from {
       opacity: 0;
@@ -124,7 +120,6 @@ regexp("/*[[URL]]*/.*") {
   }
 
   /*::::::::::::::::::::::::::::::::::::::::::::::::::::::: NEW ADDITIONS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-  /*::: Max Width Of Summary Container :::*/
   div[class^="PrePlaySummary-summary-"],
   div[class*="1NL8g"] {
     margin-bottom: 5px;
@@ -132,20 +127,17 @@ regexp("/*[[URL]]*/.*") {
     font-size: 15px;
   }
 
-  /*::: Make Sure Overflow Of Summary Container is always visible :::*/
   div[class^="PrePlaySummary-summary-"]>div,
   div[class*="1NL8g"]>div {
     overflow: visible !important;
     max-height: none !important;
   }
 
-  /*::: Hide Read More Button Since It's Useless Now :::*/
   [class^="CollapsibleText-readMore-"],
   [class*="1bRJm"] {
     display: none !important;
   }
 
-  /*::: Hide The Go Premium Button :::*/
   [class^="NavBar-plexPassButton-"],
   [class*="wVK4v"] {
     display: none !important;
@@ -156,13 +148,11 @@ regexp("/*[[URL]]*/.*") {
     display: none !important;
   }
 
-  /*::: Plex Fixes Version :::*/
   [class="version-title"]::after {
     white-space: pre;
     content: "\A Plex Fixes - Version 1.2.3";
   }
 
-  /*::: Make Users pic square :::*/
   [class^="dropdown-poster-"]>div {
     border-radius: 0;
   }
@@ -173,26 +163,22 @@ regexp("/*[[URL]]*/.*") {
     border-radius: 0;
   }
 
-  /*::: Move dashboard down slightly :::*/
   [class^="DashboardPage-dashboardPageContent-"],
   [class*="2rN8X"] {
     padding: 15px 55px 60px !important;
   }
 
-  /*::: make continue watching title containers a bit smaller :::*/
   div[class*="MetadataPosterCell-continueWatchingTitleContainer-"],
   div[class*="3yCAY"] {
     padding: 4px 5px !important;
     background-color: rgba(0, 0, 0, 0.35);
   }
 
-  /*::: shorten the padding on headers on dashboard to bring inline with being closer to continue watching title container :::*/
   div[class*="HubCellHeader-hubCellHeader-"],
   div[class*="2pvYN"] {
     padding: 4px 0 0 5px !important;
   }
 
-  /*::: Make cast pictures square :::*/
   a[class^="PrePlayCastCell-cardLink-"],
   div[class^="TagPosterCard-card-"],
   a[class*="Tndv5"],
@@ -200,7 +186,6 @@ regexp("/*[[URL]]*/.*") {
     border-radius: 0 !important;
   }
 
-  /*::: lower actors faces a bit :::*/
   div[class^="TagPosterCard-card-"] [class^="PosterCardImg-imageContainer-"]>div,
   div[class^="TagPosterCard-card-"] [class*="1Ar4M"]>div,
   div[class*="RVD0D"] [class^="PosterCardImg-imageContainer-"]>div,
@@ -208,19 +193,16 @@ regexp("/*[[URL]]*/.*") {
     background-position: 100% 30% !important;
   }
 
-  /*::: Navbar height :::*/
   [class*="NavBar-container-"],
   [class*="1T0BJ"] {
     height: 40px;
   }
 
-  /*::: Move navbar Activity Button number :::*/
   [class*="NavBarActivityButton-label-"],
   [class*="2ZN0g"] {
     top: 10px;
   }
 
-  /*::: Resize navbar search box :::*/
   [class*="QuickSearchInput-container-"],
   [class*="QuickSearch-container-"],
   [class*="1HiCo"],
@@ -228,7 +210,6 @@ regexp("/*[[URL]]*/.*") {
     height: 30px;
   }
 
-  /*::: Pulsate Status :::*/
   [class*="NavBarActivityButton-isActive-"] [class*="NavBarActivityButton-activityIcon-"] {
     opacity: 0.1;
     -webkit-animation: pulsate 5s ease-out;

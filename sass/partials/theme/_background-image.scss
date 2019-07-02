@@ -1,4 +1,4 @@
-/*::: Main Background Image :::*/
+// Main Background Image
 .background-container {
   > [class^="FullPage-container-"] {
     div {
@@ -13,7 +13,7 @@
   }
 }
 
-/*::: Image Container :::*/
+// Image Container
 div[class^="PrePlayArtwork-imageContainer-"],
 div[class*="3dXG6"] {
   position: fixed !important;
@@ -29,7 +29,7 @@ div[class*="3dXG6"] {
   -webkit-animation: plexbgfadein 0.6s ease-in;
 }
 
-/*::: Image :::*/
+// Image
 div[class^="PrePlayArtwork-imageContainer-"],
 div[class*="3dXG6"] {
   > div {
@@ -42,7 +42,7 @@ div[class*="3dXG6"] {
   }
 }
 
-/*::: Resizing adds extra divs :::*/
+// Resizing adds extra divs
 div[class^="PrePlayArtwork-imageContainer-"],
 div[class*="3dXG6"] {
   > div {
@@ -52,7 +52,7 @@ div[class*="3dXG6"] {
   }
 }
 
-/*::: Item Thumbnail :::*/
+// Item Thumbnail
 div[class^="PrePlayArtwork-imageContainer-"],
 div[class*="3dXG6"] {
   &+div {
@@ -62,7 +62,7 @@ div[class*="3dXG6"] {
   }
 }
 
-/*::: Background Fade-in :::*/
+// Background Fade-in
 @-webkit-keyframes plexbgfadein {
   from {
     opacity: 0;

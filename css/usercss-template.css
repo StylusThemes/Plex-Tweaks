@@ -52,4 +52,11 @@ VARFY "Yes" <<<EOT
 {{zoom-black-bar}} EOT;
 }
 ==/UserStyle== */
+@-moz-document regexp("https?://app.plex.tv/.*"), regexp("https?://.*:/*[[PORT]]*//.*"), regexp("/*[[URL]]*/.*") {
 {{theme}}
+/*[[CastL]]*/
+/*[[ExtrasM]]*/
+/*[[RelatedL]]*/
+/*[[PosterHE]]*/
+/*[[VARF]]*/
+}
