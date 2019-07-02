@@ -8,7 +8,7 @@
   "homepage": "https://github.com/StylusThemes/Plex-Fixes",
   "main": "style.user.css",
   "dependencies": {
-    "npm": "^6.9.0"
+    "npm": "^6.9.2"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
@@ -22,7 +22,7 @@
     "node-sass": "^4.12.0",
     "sass-lint": "^1.13.1",
     "standard": "^12.0.1",
-    "updates": "^8.1.0"
+    "updates": "^8.2.0"
   },
   "scripts": {
     "update": "updates -cu && npm install",
