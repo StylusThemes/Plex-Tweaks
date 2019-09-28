@@ -1,13 +1,13 @@
 /* ==UserStyle==
-@name         {{title}}
-@version      {{version}}
-@description  {{description}}
+@name         Plex Fixes
+@version      1.2.3
+@description  Bringing back plex to pre-3.0.0
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
 @homepageURL  https://github.com/StylusThemes/Plex-Fixes
 @supportURL   https://github.com/StylusThemes/Plex-Fixes/issues
-@updateURL    https://raw.githubusercontent.com/StylusThemes/Plex-Fixes/master/{{main}}
-@license      {{license}}
+@updateURL    https://raw.githubusercontent.com/StylusThemes/Plex-Fixes/master/style.user.css
+@license      CC-BY-SA-4.0
 
 @advanced text PORT "Port Number" "32400"
 @advanced text URL "Custom URL" "http://example.com/"
@@ -45,13 +45,6 @@ PHEN "No Hover Effects" <<<EOT
  EOT;
 }
 
-@advanced dropdown CompactSB "Contract The Sidebar To Save Screen Space [Expands Back Out On Hovering Over The Sidebar]" {
-CSY "Yes" <<<EOT
-{{contract-sidebar}} EOT;
-CSN "No" <<<EOT
- EOT;
-}
-
 @advanced dropdown VARF "Zoom in on Blu-ray rip's that haven't been cropped to remove black bars" {
 VARFN "No" <<<EOT
  EOT;
@@ -59,3 +52,11 @@ VARFY "Yes" <<<EOT
 {{zoom-black-bar}} EOT;
 }
 ==/UserStyle== */
+@-moz-document regexp("https?://app.plex.tv/.*"), regexp("https?://.*:/*[[PORT]]*//.*"), regexp("/*[[URL]]*/.*") {
+{{theme}}
+/*[[CastL]]*/
+/*[[ExtrasM]]*/
+/*[[RelatedL]]*/
+/*[[PosterHE]]*/
+/*[[VARF]]*/
+}

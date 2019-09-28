@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex Fixes
-@version      1.2.2
+@version      1.2.3
 @description  Bringing back plex to pre-3.0.0
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -45,13 +45,6 @@ PHEN "No Hover Effects" <<<EOT
  EOT;
 }
 
-@advanced dropdown CompactSB "Contract The Sidebar To Save Screen Space [Expands Back Out On Hovering Over The Sidebar]" {
-CSY "Yes" <<<EOT
-.page-container{margin-left:0!important}div[role=navigation] div a{overflow:visible}div[role=navigation] div{padding-right:0}[class^=SidebarContainer-sidebarContainer-]{width:55px!important;max-width:55px!important;transition:all .5s ease!important}[class^=SidebarContainer-sidebarContainer-]:hover{width:240px!important;max-width:240px!important;transition:all 1.5s ease!important}[class^=SidebarLink-title],[class^=SidebarList-sidebarListHeader],[class^=SidebarServerLibraries-librariesTitle],button[data-qa-id=serverMenuButton] div span,div[role=navigation] div a div:nth-child(2),div[role=navigation] div[role=header]{font-size:0!important}[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarLink-title],[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarList-sidebarListHeader],[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarServerLibraries-librariesTitle],[class^=SidebarContainer-sidebarContainer-]:hover div[role=navigation] div a div:nth-child(2),[class^=SidebarContainer-sidebarContainer-]:hover div[role=navigation] div[role=header]{font-size:12px!important;transition:all 2s ease!important}[class^=SidebarContainer-sidebarContainer-]:hover button[data-qa-id=serverMenuButton] div span{font-size:14px!important;transition:all 2s ease!important}[class^=DisclosureArrow-disclosureArrow-],[class^=SidebarLibrariesActions-actions],[class^=SidebarLink-children]{display:none!important}[class^=SidebarContainer-sidebarContainer-]:hover [class^=DisclosureArrow-disclosureArrow],[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarLibrariesActions-actions],[class^=SidebarContainer-sidebarContainer-]:hover [class^=SidebarLink-children]{display:inline-block!important;transition:all 2s ease!important}[class^=SidebarLibraryItem-action]{width:0!important} EOT;
-CSN "No" <<<EOT
- EOT;
-}
-
 @advanced dropdown VARF "Zoom in on Blu-ray rip's that haven't been cropped to remove black bars" {
 VARFN "No" <<<EOT
  EOT;
@@ -59,204 +52,135 @@ VARFY "Yes" <<<EOT
 [class^=AudioVideoPlayerView-container] video{-webkit-transform:scale(1.13)} EOT;
 }
 ==/UserStyle== */
-@-moz-document regexp("https?://app.plex.tv/.*"), regexp("https?://.*:/*[[PORT]]*//.*"), regexp("/*[[URL]]*/.*") {
-/*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+@-moz-document regexp("https?://app.plex.tv/.*"),
+regexp("https?://.*:/*[[PORT]]*//.*"),
+regexp("/*[[URL]]*/.*") {
 
-a {
-  user-select: all !important;
-}
-
-/*::: Main Background Image :::*/
-.background-container > [class^="FullPage-container-"] div > div {
-  background: #1f1f1f;
-  background-image: url(/*[[IMGURL]]*/) !important;
-  background-position: center center;
-  background-size: 100% 100% !important;
-  image-rendering: auto;
-}
-
-/*::: Image Container :::*/
-div[class^="PrePlayArtwork-imageContainer-"],
-div[class*="3dXG6"] {
-  position: fixed !important;
-  top: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  z-index: -1 !important;
-  margin: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  background: #1f1f1f !important;
-  -webkit-animation: plexbgfadein .6s ease-in;
-}
-
-/*::: Image :::*/
-div[class^="PrePlayArtwork-imageContainer-"] > div,
-div[class*="3dXG6"] > div {
-  position: fixed !important;
-  width: 100% !important;
-  height: 100% !important;
-  background-repeat: no-repeat !important;
-  background-size: 100% 100% !important;
-  opacity: .25 !important;
-}
-
-/*::: Resizing adds extra divs :::*/
-div[class^="PrePlayArtwork-imageContainer-"] > div + div,
-div[class*="3dXG6"] > div + div {
-  display: none !important;
-}
-
-/*::: Item Thumbnail :::*/
-div[class^="PrePlayArtwork-imageContainer-"] + div,
-div[class*="3dXG6"] + div {
-  position: fixed !important;
-  top: 180px !important;
-  background-position: center !important;
-}
-
-/*::: Background Fade-in :::*/
-@-webkit-keyframes plexbgfadein {
-  from {
-    opacity: 0;
+  /*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+  a {
+    -webkit-user-select: all !important;
+    -moz-user-select: all !important;
+    -ms-user-select: all !important;
+    user-select: all !important;
   }
-  to {
-    opacity: 1;
+
+  /*::::::::::::::::::::::::::::::::::::::::::::::::::::::: NEW ADDITIONS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+  div[class^="PrePlaySummary-summary-"],
+  div[class*="1NL8g"] {
+    margin-bottom: 5px;
+    max-width: none !important;
+    font-size: 15px;
   }
-}
 
-/*::::::::::::::::::::::::::::::::::::::::::::::::::::::: NEW ADDITIONS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
-/*::: Max Width Of Summary Container :::*/
-div[class^="PrePlaySummary-summary-"],
-div[class*="1NL8g"] {
-  margin-bottom: 5px;
-  max-width: none !important;
-  font-size: 15px;
-}
-
-/*::: Make Sure Overflow Of Summary Container is always visible :::*/
-div[class^="PrePlaySummary-summary-"] > div,
-div[class*="1NL8g"] > div {
-  overflow: visible !important;
-  max-height: none !important;
-}
-
-/*::: Hide Read More Button Since It's Useless Now :::*/
-[class^="CollapsibleText-readMore-"],
-[class*="1bRJm"] {
-  display: none !important;
-}
-
-/*::: Hide The Go Premium Button :::*/
-[class^="NavBar-plexPassButton-"],
-[class*="wVK4v"],
-[class^="AccountSummary-container-"] > div:nth-of-type(1) > div,
-[class*="2EbPg"] > div:nth-of-type(1) > div {
-  display: none !important;
-}
-
-/*::: Plex Fixes Version :::*/
-[class="version-title"]::after {
-  white-space: pre;
-  content: "\A Plex Fixes - Version 1.2.1";
-}
-
-/*::: Make Users pic square :::*/
-[class^="dropdown-poster-"] > div,
-[class^="card-poster"],
-[class^="AvatarImg-avatar-"],
-[class*="3Op56"] {
-  border-radius: 0;
-}
-
-/*::: Move dashboard down slightly :::*/
-[class^="DashboardPage-dashboardPageContent-"],
-[class*="2rN8X"] {
-  padding: 15px 55px 60px !important;
-}
-
-/*::: make continue watching title containers a bit smaller :::*/
-div[class*="MetadataPosterCell-continueWatchingTitleContainer-"],
-div[class*="3yCAY"] {
-  padding: 4px 5px !important;
-  background-color: rgba(0, 0, 0, .35);
-}
-
-/*::: shorten the padding on headers on dashboard to bring inline with being closer to continue watching title container :::*/
-div[class*="HubCellHeader-hubCellHeader-"],
-div[class*="2pvYN"] {
-  padding: 4px 0 0 5px !important;
-}
-
-/*::: Make cast pictures square :::*/
-a[class^="PrePlayCastCell-cardLink-"],
-div[class^="TagPosterCard-card-"],
-a[class*="Tndv5"],
-div[class*="RVD0D"] {
-  border-radius: 0 !important;
-}
-
-/*::: lower actors faces a bit :::*/
-div[class^="TagPosterCard-card-"] [class^="PosterCardImg-imageContainer-"] > div,
-div[class^="TagPosterCard-card-"] [class*="1Ar4M"] > div,
-div[class*="RVD0D"] [class^="PosterCardImg-imageContainer-"] > div,
-div[class*="RVD0D"] [class*="1Ar4M"] > div {
-  background-position: 100% 30% !important;
-}
-
-/*::: Navbar height :::*/
-[class*="NavBar-container-"],
-[class*="1T0BJ"] {
-  height: 40px;
-}
-
-/*::: Move navbar Activity Button number :::*/
-[class*="NavBarActivityButton-label-"],
-[class*="2ZN0g"] {
-  top: 10px;
-}
-
-/*::: Resize navbar search box :::*/
-[class*="QuickSearchInput-container-"],
-[class*="QuickSearch-container-"],
-[class*="1HiCo"],
-[class*="2PWkB"] {
-  height: 30px;
-}
-
-/*::: Pulsate Status :::*/
-[class*="NavBarActivityButton-isActive-"] [class*="NavBarActivityButton-activityIcon-"] {
-  opacity: .1;
-  -webkit-animation: pulsate 5s ease-out;
-  -webkit-animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes pulsate {
-  0% {
-    opacity: 1;
-    -webkit-transform: scale(1.3, 1.3);
+  div[class^="PrePlaySummary-summary-"]>div,
+  div[class*="1NL8g"]>div {
+    overflow: visible !important;
+    max-height: none !important;
   }
-  50% {
-    opacity: .3;
-    -webkit-transform: scale(.85, .85);
+
+  [class^="CollapsibleText-readMore-"],
+  [class*="1bRJm"] {
+    display: none !important;
   }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1.3, 1.3);
+
+  [class^="NavBar-plexPassButton-"],
+  [class*="wVK4v"] {
+    display: none !important;
   }
-}
 
-/*[[CastL]]*/
+  [class^="AccountSummary-container-"]>div:nth-of-type(1)>div,
+  [class*="2EbPg"]>div:nth-of-type(1)>div {
+    display: none !important;
+  }
 
-/*[[ExtrasM]]*/
+  [class="version-title"]::after {
+    white-space: pre;
+    content: "\A Plex Fixes - Version 1.2.3";
+  }
 
-/*[[RelatedL]]*/
+  [class^="dropdown-poster-"]>div {
+    border-radius: 0;
+  }
 
-/*[[PosterHE]]*/
+  [class^="card-poster"],
+  [class^="AvatarImg-avatar-"],
+  [class*="3Op56"] {
+    border-radius: 0;
+  }
 
-/*[[CompactSB]]*/
+  [class^="DashboardPage-dashboardPageContent-"],
+  [class*="2rN8X"] {
+    padding: 15px 55px 60px !important;
+  }
 
-/*[[VARF]]*/
+  div[class*="MetadataPosterCell-continueWatchingTitleContainer-"],
+  div[class*="3yCAY"] {
+    padding: 4px 5px !important;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+
+  div[class*="HubCellHeader-hubCellHeader-"],
+  div[class*="2pvYN"] {
+    padding: 4px 0 0 5px !important;
+  }
+
+  a[class^="PrePlayCastCell-cardLink-"],
+  div[class^="TagPosterCard-card-"],
+  a[class*="Tndv5"],
+  div[class*="RVD0D"] {
+    border-radius: 0 !important;
+  }
+
+  div[class^="TagPosterCard-card-"] [class^="PosterCardImg-imageContainer-"]>div,
+  div[class^="TagPosterCard-card-"] [class*="1Ar4M"]>div,
+  div[class*="RVD0D"] [class^="PosterCardImg-imageContainer-"]>div,
+  div[class*="RVD0D"] [class*="1Ar4M"]>div {
+    background-position: 100% 30% !important;
+  }
+
+  [class*="NavBar-container-"],
+  [class*="1T0BJ"] {
+    height: 40px;
+  }
+
+  [class*="NavBarActivityButton-label-"],
+  [class*="2ZN0g"] {
+    top: 10px;
+  }
+
+  [class*="QuickSearchInput-container-"],
+  [class*="QuickSearch-container-"],
+  [class*="1HiCo"],
+  [class*="2PWkB"] {
+    height: 30px;
+  }
+
+  [class*="NavBarActivityButton-isActive-"] [class*="NavBarActivityButton-activityIcon-"] {
+    opacity: 0.1;
+    -webkit-animation: pulsate 5s ease-out;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  @-webkit-keyframes "pulsate" {
+    0% {
+      opacity: 1;
+      -webkit-transform: scale(1.3, 1.3);
+    }
+
+    50% {
+      opacity: 0.3;
+      -webkit-transform: scale(0.85, 0.85);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1.3, 1.3);
+    }
+  }
+
+  /*[[CastL]]*/
+  /*[[ExtrasM]]*/
+  /*[[RelatedL]]*/
+  /*[[PosterHE]]*/
+  /*[[VARF]]*/
 }

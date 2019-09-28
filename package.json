@@ -1,38 +1,31 @@
 {
   "name": "plex-fixes",
   "title": "Plex Fixes",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Bringing back plex to pre-3.0.0",
   "license": "CC-BY-SA-4.0",
   "repository": "StylusThemes/Plex-Fixes",
   "homepage": "https://github.com/StylusThemes/Plex-Fixes",
   "main": "style.user.css",
-  "engines": {
-    "node": ">=10"
+  "dependencies": {
+    "npm": "^6.10.0"
   },
   "devDependencies": {
-    "minify": "^4.1.1",
     "eslint": "^5.16.0",
-    "eslint-config-silverwind": "^3.0.1",
-    "fs-extra": "^8.0.1",
-    "perfectionist": "^2.4.0",
-    "semver": "^6.0.0",
-    "stylelint": "^10.0.1",
-    "stylelint-config-standard": "^18.3.0",
-    "updates": "^8.0.3"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-beautify": "^3.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-file-insert": "^2.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0",
+    "sass-lint": "^1.13.1",
+    "standard": "^13.0.0",
+    "updates": "^8.2.1"
   },
   "scripts": {
-    "authors": "bash tools/authors",
-    "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
-    "eslint": "eslint --quiet --color tools/*.js",
-    "lint": "npm run eslint && npm run stylelint",
-    "major": "node tools/bump-version.js major && git add . && npm version -f major",
-    "minor": "node tools/bump-version.js minor && git add . && npm version -f minor",
-    "patch": "node tools/bump-version.js patch && git add . && npm version -f patch",
-    "perfectionist": "perfectionist style.user.css style.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "stylelint --silent --color -- style.user.css",
-    "test": "npm run eslint && npm run stylelint",
     "update": "updates -cu && npm install",
-    "usercss": "node tools/update-usercss.js"
+    "start": "gulp default"
   }
 }

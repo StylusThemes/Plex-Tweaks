@@ -1,0 +1,1 @@
+div[data-qa-id*="hub--movie.same.actor."],div[data-qa-id*="hub--movie.similar"],div[data-qa-id*="hub--tv.morefromnetwork"],div[data-qa-id*="hub--tv.same.actor"],div[data-qa-id*="hub--tv.similar"]{display:none!important}

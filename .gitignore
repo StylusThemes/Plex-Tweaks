@@ -1,12 +1,8 @@
-# lockfiles
-package-lock.json
-yarn.lock
-
 # temp stuff
 tmp/
 *.tmp
 .bak_files/
-
+ideas.txt
 
 # logs
 *.stackdump

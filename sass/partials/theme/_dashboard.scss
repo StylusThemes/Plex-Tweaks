@@ -1,0 +1,18 @@
+// Move dashboard down slightly
+[class^="DashboardPage-dashboardPageContent-"],
+[class*="2rN8X"] {
+  padding: 15px 55px 60px !important;
+}
+
+// make continue watching title containers a bit smaller
+div[class*="MetadataPosterCell-continueWatchingTitleContainer-"],
+div[class*="3yCAY"] {
+  padding: 4px 5px !important;
+  background-color: rgba(0, 0, 0, .35);
+}
+
+// shorten the padding on headers on dashboard to bring inline with being closer to continue watching title container
+div[class*="HubCellHeader-hubCellHeader-"],
+div[class*="2pvYN"] {
+  padding: 4px 0 0 5px !important;
+}

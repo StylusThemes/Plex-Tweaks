@@ -1,0 +1,119 @@
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+a {
+  -webkit-user-select: all !important;
+  -moz-user-select: all !important;
+  -ms-user-select: all !important;
+  user-select: all !important;
+}
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::: NEW ADDITIONS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+div[class^="PrePlaySummary-summary-"],
+div[class*="1NL8g"] {
+  margin-bottom: 5px;
+  max-width: none !important;
+  font-size: 15px;
+}
+
+div[class^="PrePlaySummary-summary-"] > div,
+div[class*="1NL8g"] > div {
+  overflow: visible !important;
+  max-height: none !important;
+}
+
+[class^="CollapsibleText-readMore-"],
+[class*="1bRJm"] {
+  display: none !important;
+}
+
+[class^="NavBar-plexPassButton-"],
+[class*="wVK4v"] {
+  display: none !important;
+}
+
+[class^="AccountSummary-container-"] > div:nth-of-type(1) > div,
+[class*="2EbPg"] > div:nth-of-type(1) > div {
+  display: none !important;
+}
+
+[class="version-title"]::after {
+  white-space: pre;
+  content: "\A Plex Fixes - Version 1.2.3";
+}
+
+[class^="dropdown-poster-"] > div {
+  border-radius: 0;
+}
+
+[class^="card-poster"],
+[class^="AvatarImg-avatar-"],
+[class*="3Op56"] {
+  border-radius: 0;
+}
+
+[class^="DashboardPage-dashboardPageContent-"],
+[class*="2rN8X"] {
+  padding: 15px 55px 60px !important;
+}
+
+div[class*="MetadataPosterCell-continueWatchingTitleContainer-"],
+div[class*="3yCAY"] {
+  padding: 4px 5px !important;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+div[class*="HubCellHeader-hubCellHeader-"],
+div[class*="2pvYN"] {
+  padding: 4px 0 0 5px !important;
+}
+
+a[class^="PrePlayCastCell-cardLink-"],
+div[class^="TagPosterCard-card-"],
+a[class*="Tndv5"],
+div[class*="RVD0D"] {
+  border-radius: 0 !important;
+}
+
+div[class^="TagPosterCard-card-"] [class^="PosterCardImg-imageContainer-"] > div,
+div[class^="TagPosterCard-card-"] [class*="1Ar4M"] > div,
+div[class*="RVD0D"] [class^="PosterCardImg-imageContainer-"] > div,
+div[class*="RVD0D"] [class*="1Ar4M"] > div {
+  background-position: 100% 30% !important;
+}
+
+[class*="NavBar-container-"],
+[class*="1T0BJ"] {
+  height: 40px;
+}
+
+[class*="NavBarActivityButton-label-"],
+[class*="2ZN0g"] {
+  top: 10px;
+}
+
+[class*="QuickSearchInput-container-"],
+[class*="QuickSearch-container-"],
+[class*="1HiCo"],
+[class*="2PWkB"] {
+  height: 30px;
+}
+
+[class*="NavBarActivityButton-isActive-"] [class*="NavBarActivityButton-activityIcon-"] {
+  opacity: 0.1;
+  -webkit-animation: pulsate 5s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes "pulsate" {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1.3, 1.3);
+  }
+  50% {
+    opacity: 0.3;
+    -webkit-transform: scale(0.85, 0.85);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1.3, 1.3);
+  }
+}
