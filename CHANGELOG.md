@@ -5,6 +5,8 @@
 ### Removed:
 `-` Removed contract side bar due to the fact that you can now contract the side bar in webUI version "3.100.1"
 
+`-` Temp remove background image due to the fact that there is currently no good way to fix it at the moment. If it ever is fixable then I will bring it back again.
+
 ## v1.2.2 ... (16 MAY 19)
 
 ### Removed:
