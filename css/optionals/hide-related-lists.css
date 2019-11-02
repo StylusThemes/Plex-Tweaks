@@ -2,6 +2,7 @@
 /*::: Hide Related List i.e Related movies|shows|Genres|People :::*/
 div[data-qa-id*="hub--movie.similar"],
 div[data-qa-id*="hub--movie.same.actor."],
+div[data-qa-id*="hub--external.movie.similar"],
 div[data-qa-id*="hub--tv.similar"],
 div[data-qa-id*="hub--tv.same.actor"],
 div[data-qa-id*="hub--tv.morefromnetwork"] {

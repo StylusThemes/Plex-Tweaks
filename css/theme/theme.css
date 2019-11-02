@@ -1,4 +1,8 @@
-/*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+[class="version-title"]::after {
+  white-space: pre;
+  content: "\A Plex Fixes - Version 1.2.4";
+}
+
 a {
   -webkit-user-select: all !important;
   -moz-user-select: all !important;
@@ -6,7 +10,6 @@ a {
   user-select: all !important;
 }
 
-/*::::::::::::::::::::::::::::::::::::::::::::::::::::::: NEW ADDITIONS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 div[class^="PrePlaySummary-summary-"],
 div[class*="1NL8g"] {
   margin-bottom: 5px;
@@ -35,9 +38,12 @@ div[class*="1NL8g"] > div {
   display: none !important;
 }
 
-[class="version-title"]::after {
-  white-space: pre;
-  content: "\A Plex Fixes - Version 1.2.3";
+[class*="modal-body-scroll"] {
+  max-height: 600px;
+}
+
+[class*="modal-body-with-panes"] [class*="modal-body-pane"] {
+  height: 600px;
 }
 
 [class^="dropdown-poster-"] > div {
@@ -50,20 +56,10 @@ div[class*="1NL8g"] > div {
   border-radius: 0;
 }
 
-[class^="DashboardPage-dashboardPageContent-"],
-[class*="2rN8X"] {
-  padding: 15px 55px 60px !important;
-}
-
 div[class*="MetadataPosterCell-continueWatchingTitleContainer-"],
 div[class*="3yCAY"] {
   padding: 4px 5px !important;
   background-color: rgba(0, 0, 0, 0.35);
-}
-
-div[class*="HubCellHeader-hubCellHeader-"],
-div[class*="2pvYN"] {
-  padding: 4px 0 0 5px !important;
 }
 
 a[class^="PrePlayCastCell-cardLink-"],

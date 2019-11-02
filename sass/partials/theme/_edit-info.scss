@@ -1,0 +1,10 @@
+// Makes editing info box larger
+[class*="modal-body-scroll"] {
+  max-height: 600px;
+}
+
+[class*="modal-body-with-panes"] {
+  [class*="modal-body-pane"] {
+    height: 600px;
+  }
+}

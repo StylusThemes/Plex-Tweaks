@@ -1,9 +1,9 @@
-/*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+@import 'partials/version';
+// Theme
 @import 'partials/theme/text-select';
-/*::::::::::::::::::::::::::::::::::::::::::::::::::::::: NEW ADDITIONS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 @import 'partials/theme/summary';
 @import 'partials/theme/premium';
-@import 'partials/version';
+@import 'partials/theme/edit-info';
 @import 'partials/theme/user-pics';
 @import 'partials/theme/dashboard';
 @import 'partials/theme/actors-pics';

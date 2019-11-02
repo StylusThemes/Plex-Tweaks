@@ -2,8 +2,6 @@
 
 **_Fixing various issues I find with [Plex]_**
 
-**_Currently trying to figure out how to fix backgrounds again, may take some time so please bear with me_**
-
 [![Preview]][screenshots]
 
 ## Menu

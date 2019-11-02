@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex Fixes
-@version      1.2.3
+@version      1.2.4
 @description  Bringing back plex to pre-3.0.0
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -33,14 +33,14 @@ EEN "Don't Expand & Don't Hide" <<<EOT
 
 @advanced dropdown RelatedL "Related Lists" {
 RLY "Hide Related Lists" <<<EOT
-div[data-qa-id*="hub--movie.same.actor."],div[data-qa-id*="hub--movie.similar"],div[data-qa-id*="hub--tv.morefromnetwork"],div[data-qa-id*="hub--tv.same.actor"],div[data-qa-id*="hub--tv.similar"]{display:none!important} EOT;
+div[data-qa-id*="hub--external.movie.similar"],div[data-qa-id*="hub--movie.same.actor."],div[data-qa-id*="hub--movie.similar"],div[data-qa-id*="hub--tv.morefromnetwork"],div[data-qa-id*="hub--tv.same.actor"],div[data-qa-id*="hub--tv.similar"]{display:none!important} EOT;
 RLN "Don't Hide" <<<EOT
  EOT;
 }
 
 @advanced dropdown PosterHE "Posters" {
 PHEY "Hover Effects" <<<EOT
-div[class*="2gRcQ"],div[class^=MetadataPosterCard-cardContainer-]{box-shadow:0 6px 26px -2px #000;transition:all 350ms;-webkit-perspective:500px;perspective:500px}div[class*="2gRcQ"]:hover,div[class^=MetadataPosterCard-cardContainer-]:hover{box-shadow:0 0 0 0 #000;transform:scale(.95) translateY(0)}div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover,div[data-qa-id="hub--home.continue"] div[class^=MetadataPosterCard-cardContainer-]:hover{transform:scale(.97) translateY(-5px);-webkit-transform:scale(.97) translateY(-5px);-moz-transform:scale(.97) translateY(-5px);-ms-transform:scale(.97) translateY(-5px);-o-transform:scale(.97) translateY(-5px)}[class*="1HkmQ"],[class^=MetadataPhotoCell-photoContainer-]{transition:all 350ms;-webkit-perspective:500px;perspective:500px}[class*="1HkmQ"],[class^=MetadataPhotoCell-photoContainer-]:hover{transform:scale(.95) translateY(0)}[class*=Po3Kx]:hover,[class^=MetadataPhotoCell-photo-]:hover{box-shadow:none;transform:scale(1.02)}div[class*=M67q6],div[class^=MetadataPosterCardOverlay-playCircle-]{border-radius:50%;width:50px;height:50px;font-size:18px;line-height:48px;color:hsla(0,0%,100%,.7);box-shadow:0 4px 16px -2px #000;transition:all 350ms;transform:translate(-50%,-50%) scale(.1)}div[class*="2gRcQ"]:hover div[class*=M67q6],div[class^=MetadataPosterCard-cardContainer-]:hover div[class^=MetadataPosterCardOverlay-playCircle-]{transform:translate(-50%,-50%) scale(1.2)}div[class*="2gRcQ"]:hover [class^=plex-icon-play-],div[class^=MetadataPosterCard-cardContainer-]:hover [class^=plex-icon-play-]{font-size:30px} EOT;
+div[class*="3bztR"],div[class^=MetadataPosterCard-card-]{box-shadow:0 6px 26px -2px #000;transition:all 350ms;-webkit-perspective:500px;perspective:500px}div[class*="3bztR"]:hover,div[class^=MetadataPosterCard-card-]:hover{box-shadow:0 0 0 0 #000;transform:scale(.95) translateY(0)}[class*="1HkmQ"],[class^=MetadataPhotoCell-photoContainer-]{transition:all 350ms;-webkit-perspective:500px;perspective:500px}[class*="1HkmQ"],[class^=MetadataPhotoCell-photoContainer-]:hover{transform:scale(.95) translateY(0)}[class*=Po3Kx]:hover,[class^=MetadataPhotoCell-photo-]:hover{box-shadow:none;transform:scale(1.02)}div[class*=M67q6],div[class^=MetadataPosterCardOverlay-playCircle-]{border-radius:50%;width:50px;height:50px;font-size:18px;line-height:48px;color:hsla(0,0%,100%,.7);box-shadow:0 4px 16px -2px #000;transition:all 350ms;transform:translate(-50%,-50%) scale(.1)}div[class*="2gRcQ"]:hover div[class*=M67q6],div[class^=MetadataPosterCard-cardContainer-]:hover div[class^=MetadataPosterCardOverlay-playCircle-]{transform:translate(-50%,-50%) scale(1.2)}div[class*="2gRcQ"]:hover [class^=plex-icon-play-],div[class^=MetadataPosterCard-cardContainer-]:hover [class^=plex-icon-play-]{font-size:30px} EOT;
 PHEN "No Hover Effects" <<<EOT
  EOT;
 }
@@ -55,8 +55,11 @@ VARFY "Yes" <<<EOT
 @-moz-document regexp("https?://app.plex.tv/.*"),
 regexp("https?://.*:/*[[PORT]]*//.*"),
 regexp("/*[[URL]]*/.*") {
+  [class="version-title"]::after {
+    white-space: pre;
+    content: "\A Plex Fixes - Version 1.2.4";
+  }
 
-  /*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
   a {
     -webkit-user-select: all !important;
     -moz-user-select: all !important;
@@ -64,7 +67,6 @@ regexp("/*[[URL]]*/.*") {
     user-select: all !important;
   }
 
-  /*::::::::::::::::::::::::::::::::::::::::::::::::::::::: NEW ADDITIONS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
   div[class^="PrePlaySummary-summary-"],
   div[class*="1NL8g"] {
     margin-bottom: 5px;
@@ -93,9 +95,12 @@ regexp("/*[[URL]]*/.*") {
     display: none !important;
   }
 
-  [class="version-title"]::after {
-    white-space: pre;
-    content: "\A Plex Fixes - Version 1.2.3";
+  [class*="modal-body-scroll"] {
+    max-height: 600px;
+  }
+
+  [class*="modal-body-with-panes"] [class*="modal-body-pane"] {
+    height: 600px;
   }
 
   [class^="dropdown-poster-"]>div {
@@ -108,20 +113,10 @@ regexp("/*[[URL]]*/.*") {
     border-radius: 0;
   }
 
-  [class^="DashboardPage-dashboardPageContent-"],
-  [class*="2rN8X"] {
-    padding: 15px 55px 60px !important;
-  }
-
   div[class*="MetadataPosterCell-continueWatchingTitleContainer-"],
   div[class*="3yCAY"] {
     padding: 4px 5px !important;
     background-color: rgba(0, 0, 0, 0.35);
-  }
-
-  div[class*="HubCellHeader-hubCellHeader-"],
-  div[class*="2pvYN"] {
-    padding: 4px 0 0 5px !important;
   }
 
   a[class^="PrePlayCastCell-cardLink-"],

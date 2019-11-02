@@ -1,11 +1,27 @@
 # Plex Fixes Changelog
 
-## v1.2.3 ... (Not Released Yet)
+## v1.2.4 ... (Unreleased)
+
+### Additions:
+`+` Added css to enlarge the edit info box.
+
+`+` Added external movies to hide related lists.
+
+### Fixes:
+`+` Fix hover posters for the unoUI at app.plex.tv
+
+### Note:
+`*` Seems that plex might be switching to using fullscreen background images again in the near future going by app.plex.tv, so for now background options will not be coming back.
+
+## v1.2.3 ... (27 Sept 19)
 
 ### Removed:
 `-` Removed contract side bar due to the fact that you can now contract the side bar in webUI version "3.100.1"
 
 `-` Temp remove background image due to the fact that there is currently no good way to fix it at the moment. If it ever is fixable then I will bring it back again.
+
+### Note:
+`*` If you want to continue using 1.2.2 the latest version of plex media server you would need is `1.16.2.1297`
 
 ## v1.2.2 ... (16 MAY 19)
 

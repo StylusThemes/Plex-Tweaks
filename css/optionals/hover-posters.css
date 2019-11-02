@@ -3,8 +3,8 @@
 /*::: Credits to @IanCeling :::*/
 
 /* Poster Shadow */
-div[class^="MetadataPosterCard-cardContainer-"],
-div[class*="2gRcQ"] {
+div[class^="MetadataPosterCard-card-"],
+div[class*="3bztR"] {
   box-shadow: 0 6px 26px -2px #000;
   transition: all 350ms;
   -webkit-perspective: 500px;
@@ -12,20 +12,10 @@ div[class*="2gRcQ"] {
 }
 
 /* Poster Hover */
-div[class^="MetadataPosterCard-cardContainer-"]:hover,
-div[class*="2gRcQ"]:hover {
+div[class^="MetadataPosterCard-card-"]:hover,
+div[class*="3bztR"]:hover {
   box-shadow: 0 0 0 0 #000;
   transform: scale(.95) translateY(0);
-}
-
-/* Continue Watching poster hover */
-div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover,
-div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover {
-  transform: scale(.97) translateY(-5px);
-  -webkit-transform: scale(.97) translateY(-5px);
-  -moz-transform: scale(.97) translateY(-5px);
-  -ms-transform: scale(.97) translateY(-5px);
-  -o-transform: scale(.97) translateY(-5px);
 }
 
 /*::: Photo Card Hover :::*/
