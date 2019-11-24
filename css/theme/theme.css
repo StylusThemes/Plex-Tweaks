@@ -29,7 +29,9 @@ div[class*="1NL8g"] > div {
 }
 
 [class^="NavBar-plexPassButton-"],
-[class*="wVK4v"] {
+[class*="wVK4v"],
+[class^="NavBar-buttonSeparator-"],
+[class*="1ZbV4"] {
   display: none !important;
 }
 

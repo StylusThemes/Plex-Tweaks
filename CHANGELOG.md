@@ -10,6 +10,8 @@
 ### Fixes:
 `+` Fix hover posters for the unoUI at app.plex.tv
 
+`+` Remove the little bar left in the nav bar that was near the premium button
+
 ### Note:
 `*` Seems that plex might be switching to using fullscreen background images again in the near future going by app.plex.tv, so for now background options will not be coming back.
 
