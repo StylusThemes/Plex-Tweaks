@@ -1,6 +1,6 @@
 # Plex Fixes Changelog
 
-## v1.2.4 ... (Unreleased)
+## v1.2.4 ... (04 DECEMBER 19)
 
 ### Additions:
 `+` Added css to enlarge the edit info box.
@@ -13,9 +13,11 @@
 `+` Remove the little bar left in the nav bar that was near the premium button
 
 ### Note:
-`*` Seems that plex might be switching to using fullscreen background images again in the near future going by app.plex.tv, so for now background options will not be coming back.
+`*` Plex has brought back fullscreen background images again in the latest release of plex server `1.18.3.2111` finally! Going to see if I can figure out a way to change the opacity or something a bit to make the images a bit more lighter in the near future.
 
-## v1.2.3 ... (27 Sept 19)
+`*` Changed default option for `Related Lists` options. New default is to not hide, while secondary option is to now hide. I may end up splitting up the related lists into seperate options in the near future, so that users can choose what related lists to hide exactly instead of just hiding all related lists.
+
+## v1.2.3 ... (27 SEPTEMBER 19)
 
 ### Removed:
 `-` Removed contract side bar due to the fact that you can now contract the side bar in webUI version "3.100.1"

@@ -32,10 +32,10 @@ EEN "Don't Expand & Don't Hide" <<<EOT
 }
 
 @advanced dropdown RelatedL "Related Lists" {
-RLY "Hide Related Lists" <<<EOT
-div[data-qa-id*="hub--external.movie.similar"],div[data-qa-id*="hub--movie.same.actor."],div[data-qa-id*="hub--movie.similar"],div[data-qa-id*="hub--tv.morefromnetwork"],div[data-qa-id*="hub--tv.same.actor"],div[data-qa-id*="hub--tv.similar"]{display:none!important} EOT;
 RLN "Don't Hide" <<<EOT
  EOT;
+RLY "Hide Related Lists" <<<EOT
+div[data-qa-id*="hub--external.movie.similar"],div[data-qa-id*="hub--movie.same.actor."],div[data-qa-id*="hub--movie.similar"],div[data-qa-id*="hub--tv.morefromnetwork"],div[data-qa-id*="hub--tv.same.actor"],div[data-qa-id*="hub--tv.similar"]{display:none!important} EOT;
 }
 
 @advanced dropdown PosterHE "Posters" {

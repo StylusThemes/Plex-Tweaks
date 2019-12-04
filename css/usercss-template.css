@@ -32,10 +32,10 @@ EEN "Don't Expand & Don't Hide" <<<EOT
 }
 
 @advanced dropdown RelatedL "Related Lists" {
-RLY "Hide Related Lists" <<<EOT
-{{hide-related-lists}} EOT;
 RLN "Don't Hide" <<<EOT
  EOT;
+RLY "Hide Related Lists" <<<EOT
+{{hide-related-lists}} EOT;
 }
 
 @advanced dropdown PosterHE "Posters" {
