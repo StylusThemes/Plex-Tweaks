@@ -15,7 +15,7 @@
 ### Note:
 `*` Plex has brought back fullscreen background images again in the latest release of plex server `1.18.3.2111` finally! Going to see if I can figure out a way to change the opacity or something a bit to make the images a bit more lighter in the near future.
 
-`*` Changed default option for `Related Lists` options. New default is to not hide, while secondary option is to now hide. I may end up splitting up the related lists into seperate options in the near future, so that users can choose what related lists to hide exactly instead of just hiding all related lists.
+`*` Changed default option for `Related Lists` options. New default is to not hide, while secondary option is to now hide. I may end up splitting up the related lists into separate options in the near future, so that users can choose what related lists to hide exactly instead of just hiding all related lists.
 
 ## v1.2.3 ... (27 SEPTEMBER 19)
 
