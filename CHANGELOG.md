@@ -1,5 +1,10 @@
 # Plex Fixes Changelog
 
+## v1.2.5 ... (24 APRIL 20)
+
+### Changes:
+`+` Change edit info box css to now enlarge to 75% of your viewport height and width.
+
 ## v1.2.4 ... (04 DECEMBER 19)
 
 ### Additions:

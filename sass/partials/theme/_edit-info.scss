@@ -1,10 +1,16 @@
 // Makes editing info box larger
+[class*="modal-lg"] {
+  > [class*="modal-dialog"] {
+    width: 75vw;
+  }
+}
+
 [class*="modal-body-scroll"] {
-  max-height: 600px;
+  max-height: 75vh;
 }
 
 [class*="modal-body-with-panes"] {
   [class*="modal-body-pane"] {
-    height: 600px;
+    height: 100vh;
   }
 }

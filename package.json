@@ -1,28 +1,28 @@
 {
   "name": "plex-fixes",
   "title": "Plex Fixes",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Bringing back plex to pre-3.0.0",
   "license": "CC-BY-SA-4.0",
   "repository": "StylusThemes/Plex-Fixes",
   "homepage": "https://github.com/StylusThemes/Plex-Fixes",
   "main": "style.user.css",
   "dependencies": {
-    "yarn": "^1.22.0"
+    "yarn": "^1.22.4"
   },
   "devDependencies": {
-    "eslint": "^6.7.2",
+    "eslint": "^6.8.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-beautify": "^3.0.0",
-    "gulp-clean-css": "^4.2.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-file-insert": "^2.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.2",
-    "node-sass": "^4.13.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.0",
     "sass-lint": "^1.13.1",
-    "standard": "^14.3.1",
-    "updates": "^9.2.0"
+    "standard": "^14.3.3",
+    "updates": "^10.2.10"
   },
   "browserslist": [
     "> 0.2%",

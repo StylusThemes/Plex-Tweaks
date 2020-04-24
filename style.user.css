@@ -57,7 +57,7 @@ regexp("https?://.*:/*[[PORT]]*//.*"),
 regexp("/*[[URL]]*/.*") {
   [class="version-title"]::after {
     white-space: pre;
-    content: "\A Plex Fixes - Version 1.2.4";
+    content: "\A Plex Fixes - Version 1.2.5";
   }
 
   a {
@@ -97,12 +97,16 @@ regexp("/*[[URL]]*/.*") {
     display: none !important;
   }
 
+  [class*="modal-lg"]>[class*="modal-dialog"] {
+    width: 75vw;
+  }
+
   [class*="modal-body-scroll"] {
-    max-height: 600px;
+    max-height: 75vh;
   }
 
   [class*="modal-body-with-panes"] [class*="modal-body-pane"] {
-    height: 600px;
+    height: 100vh;
   }
 
   [class^="dropdown-poster-"]>div {
