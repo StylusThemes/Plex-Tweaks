@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex Fixes
-@version      1.2.5
+@version      1.2.6
 @description  Bringing back plex to pre-3.0.0
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -35,7 +35,7 @@ EEN "Don't Expand & Don't Hide" <<<EOT
 RLN "Don't Hide" <<<EOT
  EOT;
 RLY "Hide Related Lists" <<<EOT
-div[data-qa-id*="hub--external.movie.similar"],div[data-qa-id*="hub--movie.same.actor."],div[data-qa-id*="hub--movie.similar"],div[data-qa-id*="hub--tv.morefromnetwork"],div[data-qa-id*="hub--tv.same.actor"],div[data-qa-id*="hub--tv.similar"]{display:none!important} EOT;
+div[data-qa-id*="hub--external.movie.similar"],div[data-qa-id*="hub--external.show.similar"],div[data-qa-id*="hub--movie.same.actor."],div[data-qa-id*="hub--movie.similar"],div[data-qa-id*="hub--tv.morefromnetwork"],div[data-qa-id*="hub--tv.same.actor"],div[data-qa-id*="hub--tv.similar"]{display:none!important} EOT;
 }
 
 @advanced dropdown PosterHE "Posters" {
@@ -57,7 +57,7 @@ regexp("https?://.*:/*[[PORT]]*//.*"),
 regexp("/*[[URL]]*/.*") {
   [class="version-title"]::after {
     white-space: pre;
-    content: "\A Plex Fixes - Version 1.2.5";
+    content: "\A Plex Fixes - Version 1.2.6";
   }
 
   a {

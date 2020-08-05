@@ -1,5 +1,10 @@
 # Plex Fixes Changelog
 
+## v1.2.6 ... (05 AUGUST 20)
+
+### Changes:
+`+` Added external shows to the hide list for related lists.
+
 ## v1.2.5 ... (24 APRIL 20)
 
 ### Changes:
