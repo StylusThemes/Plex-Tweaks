@@ -2,7 +2,6 @@ pull_request_rules:
   - name: automatic merge when CI passes and 1 review
     conditions:
       - "#approved-reviews-by>=1"
-      - status-success=continuous-integration/appveyor/pr
       - status-success=WIP
       - base=master
     actions:
@@ -12,7 +11,6 @@ pull_request_rules:
   - name: automatic merge when CI passes and user is JourneyOver
     conditions:
       - author=JourneyOver
-      - status-success=continuous-integration/appveyor/pr
       - status-success=WIP
       - base=master
     actions:
@@ -22,8 +20,7 @@ pull_request_rules:
   - name: automatic merge when user is dependabot[bot]
     conditions:
       - author=dependabot[bot]
-      - status-success=continuous-integration/appveyor/pr
-      - base=master
+      - base=dev
     actions:
       merge:
         strict: smart
