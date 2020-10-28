@@ -1,3 +1,6 @@
+### <center>Theme currently does not support webUI above 4.34.4 / Plex Media Server 1.20.3.3483</center>
+##### <center>Not sure when I'll get around to updating the theme fully as there are several things that are now completely broken and no longer possible to do with css alone.</center>
+
 # Plex Fixes [![Version][version]][1] [![Size][size]][1] [![Install directly from GitHub][install]][2] [![GitHub stars][stars]][3] [![GitHub watchers][watchers]][4] [![GitHub open issues][open issues]][5] [![GitHub closed issues][closed issues]][5] [![GitHub license][license]][6] [![GitHub last commit][last commit]][7] [![devDependencies][devdependencies]][8]
 
 **_Fixing various issues I find with [Plex]_**
