@@ -1,13 +1,13 @@
 // Navbar height
 [class*="NavBar-container-"],
 [class*="1T0BJ"] {
-  height: 40px;
+  height: 30px;
 }
 
 // Move navbar Activity Button number
 [class*="NavBarActivityButton-label-"],
 [class*="2ZN0g"] {
-  top: 10px;
+  top: 6px;
 }
 
 // Resize navbar search box
@@ -15,13 +15,13 @@
 [class*="QuickSearch-container-"],
 [class*="1HiCo"],
 [class*="2PWkB"] {
-  height: 30px;
+  height: 25px;
 }
 
 // Pulsate Status
-[class*="NavBarActivityButton-isActive-"] {
+[class*="NavBarActivityButton-isHighlighted-"] {
   [class*="NavBarActivityButton-activityIcon-"] {
-    opacity: 0.1;
+    opacity: .1;
     -webkit-animation: pulsate 5s ease-out;
     -webkit-animation-iteration-count: infinite;
   }
@@ -33,7 +33,7 @@
     -webkit-transform: scale(1.3, 1.3);
   }
   50% {
-    opacity: 0.3;
+    opacity: .3;
     -webkit-transform: scale(.85, .85);
   }
   100% {

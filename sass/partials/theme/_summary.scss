@@ -1,14 +1,6 @@
-// Max Width Of Summary Container
-div[class^="PrePlaySummary-summary-"],
-div[class*="1NL8g"] {
-  margin-bottom: 5px;
-  max-width: none !important;
-  font-size: 15px;
-}
-
 // Make Sure Overflow Of Summary Container is always visible
-div[class^="PrePlaySummary-summary-"],
-div[class*="1NL8g"] {
+[class^="PrePlaySummary-summary-"],
+[class*="320PK"] {
   > div {
     overflow: visible !important;
     max-height: none !important;
@@ -17,6 +9,6 @@ div[class*="1NL8g"] {
 
 // Hide Read More Button Since It's Useless Now
 [class^="CollapsibleText-readMore-"],
-[class*="1bRJm"] {
+[class*="1FIz2"] {
   display: none !important;
 }

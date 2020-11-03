@@ -1,5 +1,0 @@
-/* hide-cast-list */
-/*::: Hide Cast List :::*/
-div[class^="PrePlayCastList-castList-"] {
-  display: none !important;
-}

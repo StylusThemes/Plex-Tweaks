@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex Fixes
-@version      1.2.6
+@version      1.3.0
 @description  Bringing back plex to pre-3.0.0
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -11,52 +11,8 @@
 
 @advanced text PORT "Port Number" "32400"
 @advanced text URL "Custom URL" "http://example.com/"
-@advanced text IMGURL "Custom Background Image for Discover Page" "http://example.com/example.jpg"
 
-@advanced dropdown CastL "Cast List" {
-CLY "Hover Effects" <<<EOT
-{{hover-cast-list}} EOT;
-CLH "Hide Cast List" <<<EOT
-{{hide-cast-list}} EOT;
-CLN "No Hover Effect & Don't Hide Cast List" <<<EOT
- EOT;
-}
-
-@advanced dropdown ExtrasM "Extras" {
-EEY "Expand Movie Extras" <<<EOT
-{{expand-movie-extras}} EOT;
-EEH "Hide Extras" <<<EOT
-{{hide-extras}} EOT;
-EEN "Don't Expand & Don't Hide" <<<EOT
- EOT;
-}
-
-@advanced dropdown RelatedL "Related Lists" {
-RLN "Don't Hide" <<<EOT
- EOT;
-RLY "Hide Related Lists" <<<EOT
-{{hide-related-lists}} EOT;
-}
-
-@advanced dropdown PosterHE "Posters" {
-PHEY "Hover Effects" <<<EOT
-{{hover-posters}} EOT;
-PHEN "No Hover Effects" <<<EOT
- EOT;
-}
-
-@advanced dropdown VARF "Zoom in on Blu-ray rip's that haven't been cropped to remove black bars" {
-VARFN "No" <<<EOT
- EOT;
-VARFY "Yes" <<<EOT
-{{zoom-black-bar}} EOT;
-}
 ==/UserStyle== */
 @-moz-document regexp("https?://app.plex.tv/.*"), regexp("https?://.*:/*[[PORT]]*//.*"), regexp("/*[[URL]]*/.*") {
 {{theme}}
-/*[[CastL]]*/
-/*[[ExtrasM]]*/
-/*[[RelatedL]]*/
-/*[[PosterHE]]*/
-/*[[VARF]]*/
 }

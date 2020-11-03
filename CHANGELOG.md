@@ -1,5 +1,14 @@
 # Plex Fixes Changelog
 
+## v1.3.0 ... (03 NOVEMBER 20)
+
+### Note:
+`*` Literally rewriting everything. All options are removed, some will come back and some may never come back due to how plex devs have implemented css for certain things
+
+`*` Plex Fixes Version 1.3.0 and higher will be made with `Plex server 1.20.4.3508 / WebUI 4.35.1` and higher in mind. Plex Fixes Version 1.2.6 and below are made for `Plex server 1.20.3.3483 / WebUI 4.34.4` and below.
+
+`*` Thinking about changing the name of this theme at some point due to the fact that this theme has kinda diverged away from trying to bring back things from pre 3.0.0 of plex since that is kinda well no longer possible and hasn't been for a very long time. (current idea for new name is "Plext")
+
 ## v1.2.6 ... (05 AUGUST 20)
 
 ### Changes:

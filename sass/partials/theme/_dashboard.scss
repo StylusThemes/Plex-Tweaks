@@ -1,6 +1,7 @@
 // make continue watching title containers a bit smaller
-div[class*="MetadataPosterCell-continueWatchingTitleContainer-"],
-div[class*="3yCAY"] {
-  padding: 4px 5px !important;
-  background-color: rgba(0, 0, 0, .35);
+[class^="MetadataPosterCell-continueWatchingTitleContainer-"],
+[class*="3yCAY"] {
+  border-radius: 4px !important;
+  padding: 2px 5px !important;
+  background-color: rgba(0, 0, 0, .3);
 }

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex Fixes
-@version      1.2.6
+@version      1.3.0
 @description  Bringing back plex to pre-3.0.0
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -11,53 +11,14 @@
 
 @advanced text PORT "Port Number" "32400"
 @advanced text URL "Custom URL" "http://example.com/"
-@advanced text IMGURL "Custom Background Image for Discover Page" "http://example.com/example.jpg"
 
-@advanced dropdown CastL "Cast List" {
-CLY "Hover Effects" <<<EOT
-a[class*=Tndv5]:hover,a[class*=Tndv5]:hover>div,a[class^=PrePlayCastCell-cardLink-]:hover,a[class^=PrePlayCastCell-cardLink-]:hover>div{transform:scale(1.07);-webkit-transform:scale(1.07);-moz-transform:scale(1.07);-ms-transform:scale(1.07);-o-transform:scale(1.07)} EOT;
-CLH "Hide Cast List" <<<EOT
-div[class^=PrePlayCastList-castList-]{display:none!important} EOT;
-CLN "No Hover Effect & Don't Hide Cast List" <<<EOT
- EOT;
-}
-
-@advanced dropdown ExtrasM "Extras" {
-EEY "Expand Movie Extras" <<<EOT
-[class*="2NcGK"]>div:nth-child(2),[class*="2NcGK"]>div:nth-child(2)>[class*="2XznZ"]>div>div,[class^=PrePlayExtrasList-extrasHubCell-]>div:nth-child(2),[class^=PrePlayExtrasList-extrasHubCell-]>div:nth-child(2)>[class^=Measure-container-]>div>div{width:auto!important;height:auto!important}[class*="2NcGK"]>div:nth-child(2)>[class*="2XznZ"]>div>div>div,[class^=PrePlayExtrasList-extrasHubCell-]>div:nth-child(2)>[class^=Measure-container-]>div>div>div{display:inline-block;position:relative!important;margin:10px;transform:translate3d(10px,10px,0)!important} EOT;
-EEH "Hide Extras" <<<EOT
-div[class^=PrePlayExtrasList-extrasHubCell-]{display:none!important} EOT;
-EEN "Don't Expand & Don't Hide" <<<EOT
- EOT;
-}
-
-@advanced dropdown RelatedL "Related Lists" {
-RLN "Don't Hide" <<<EOT
- EOT;
-RLY "Hide Related Lists" <<<EOT
-div[data-qa-id*="hub--external.movie.similar"],div[data-qa-id*="hub--external.show.similar"],div[data-qa-id*="hub--movie.same.actor."],div[data-qa-id*="hub--movie.similar"],div[data-qa-id*="hub--tv.morefromnetwork"],div[data-qa-id*="hub--tv.same.actor"],div[data-qa-id*="hub--tv.similar"]{display:none!important} EOT;
-}
-
-@advanced dropdown PosterHE "Posters" {
-PHEY "Hover Effects" <<<EOT
-div[class*="3bztR"],div[class^=MetadataPosterCard-card-]{box-shadow:0 6px 26px -2px #000;transition:all 350ms;-webkit-perspective:500px;perspective:500px}div[class*="3bztR"]:hover,div[class^=MetadataPosterCard-card-]:hover{box-shadow:0 0 0 0 #000;transform:scale(.95) translateY(0)}[class*="1HkmQ"],[class^=MetadataPhotoCell-photoContainer-]{transition:all 350ms;-webkit-perspective:500px;perspective:500px}[class*="1HkmQ"],[class^=MetadataPhotoCell-photoContainer-]:hover{transform:scale(.95) translateY(0)}[class*=Po3Kx]:hover,[class^=MetadataPhotoCell-photo-]:hover{box-shadow:none;transform:scale(1.02)}div[class*=M67q6],div[class^=MetadataPosterCardOverlay-playCircle-]{border-radius:50%;width:50px;height:50px;font-size:18px;line-height:48px;color:hsla(0,0%,100%,.7);box-shadow:0 4px 16px -2px #000;transition:all 350ms;transform:translate(-50%,-50%) scale(.1)}div[class*="2gRcQ"]:hover div[class*=M67q6],div[class^=MetadataPosterCard-cardContainer-]:hover div[class^=MetadataPosterCardOverlay-playCircle-]{transform:translate(-50%,-50%) scale(1.2)}div[class*="2gRcQ"]:hover [class^=plex-icon-play-],div[class^=MetadataPosterCard-cardContainer-]:hover [class^=plex-icon-play-]{font-size:30px} EOT;
-PHEN "No Hover Effects" <<<EOT
- EOT;
-}
-
-@advanced dropdown VARF "Zoom in on Blu-ray rip's that haven't been cropped to remove black bars" {
-VARFN "No" <<<EOT
- EOT;
-VARFY "Yes" <<<EOT
-[class^=AudioVideoPlayerView-container] video{-webkit-transform:scale(1.13)} EOT;
-}
 ==/UserStyle== */
 @-moz-document regexp("https?://app.plex.tv/.*"),
 regexp("https?://.*:/*[[PORT]]*//.*"),
 regexp("/*[[URL]]*/.*") {
   [class="version-title"]::after {
     white-space: pre;
-    content: "\A Plex Fixes - Version 1.2.6";
+    content: "\A Plex Fixes - Version 1.3.0";
   }
 
   a {
@@ -67,26 +28,19 @@ regexp("/*[[URL]]*/.*") {
     user-select: all !important;
   }
 
-  div[class^="PrePlaySummary-summary-"],
-  div[class*="1NL8g"] {
-    margin-bottom: 5px;
-    max-width: none !important;
-    font-size: 15px;
-  }
-
-  div[class^="PrePlaySummary-summary-"]>div,
-  div[class*="1NL8g"]>div {
+  [class^="PrePlaySummary-summary-"]>div,
+  [class*="320PK"]>div {
     overflow: visible !important;
     max-height: none !important;
   }
 
   [class^="CollapsibleText-readMore-"],
-  [class*="1bRJm"] {
+  [class*="1FIz2"] {
     display: none !important;
   }
 
-  [class^="NavBar-plexPassButton-"],
-  [class*="wVK4v"],
+  [class^="NavBarButton-button-"],
+  [class*="oTeMHk"],
   [class^="NavBar-buttonSeparator-"],
   [class*="1ZbV4"] {
     display: none !important;
@@ -109,55 +63,42 @@ regexp("/*[[URL]]*/.*") {
     height: 100vh;
   }
 
-  [class^="dropdown-poster-"]>div {
-    border-radius: 0;
-  }
-
-  [class^="card-poster"],
   [class^="AvatarImg-avatar-"],
   [class*="3Op56"] {
-    border-radius: 0;
+    border-radius: 4px;
   }
 
-  div[class*="MetadataPosterCell-continueWatchingTitleContainer-"],
-  div[class*="3yCAY"] {
-    padding: 4px 5px !important;
-    background-color: rgba(0, 0, 0, 0.35);
+  [class^="MetadataPosterCell-continueWatchingTitleContainer-"],
+  [class*="3yCAY"] {
+    border-radius: 4px !important;
+    padding: 2px 5px !important;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
-  a[class^="PrePlayCastCell-cardLink-"],
-  div[class^="TagPosterCard-card-"],
-  a[class*="Tndv5"],
-  div[class*="RVD0D"] {
-    border-radius: 0 !important;
-  }
-
-  div[class^="TagPosterCard-card-"] [class^="PosterCardImg-imageContainer-"]>div,
-  div[class^="TagPosterCard-card-"] [class*="1Ar4M"]>div,
-  div[class*="RVD0D"] [class^="PosterCardImg-imageContainer-"]>div,
-  div[class*="RVD0D"] [class*="1Ar4M"]>div {
-    background-position: 100% 30% !important;
+  [class^="PrePlayCastList-rounded-"],
+  [class*="djFPq"] {
+    border-radius: 4px !important;
   }
 
   [class*="NavBar-container-"],
   [class*="1T0BJ"] {
-    height: 40px;
+    height: 30px;
   }
 
   [class*="NavBarActivityButton-label-"],
   [class*="2ZN0g"] {
-    top: 10px;
+    top: 6px;
   }
 
   [class*="QuickSearchInput-container-"],
   [class*="QuickSearch-container-"],
   [class*="1HiCo"],
   [class*="2PWkB"] {
-    height: 30px;
+    height: 25px;
   }
 
-  [class*="NavBarActivityButton-isActive-"] [class*="NavBarActivityButton-activityIcon-"] {
-    opacity: 0.1;
+  [class*="NavBarActivityButton-isHighlighted-"] [class*="NavBarActivityButton-activityIcon-"] {
+    opacity: .1;
     -webkit-animation: pulsate 5s ease-out;
     -webkit-animation-iteration-count: infinite;
   }
@@ -169,7 +110,7 @@ regexp("/*[[URL]]*/.*") {
     }
 
     50% {
-      opacity: 0.3;
+      opacity: .3;
       -webkit-transform: scale(0.85, 0.85);
     }
 
@@ -179,9 +120,4 @@ regexp("/*[[URL]]*/.*") {
     }
   }
 
-  /*[[CastL]]*/
-  /*[[ExtrasM]]*/
-  /*[[RelatedL]]*/
-  /*[[PosterHE]]*/
-  /*[[VARF]]*/
 }
