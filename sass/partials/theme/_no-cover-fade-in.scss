@@ -1,0 +1,5 @@
+// Eliminates the fade-in of media covers
+[class^="CrossFadeImage-crossFade-"],
+[class*="10Sndv"] {
+  animation-name: none !important;
+}

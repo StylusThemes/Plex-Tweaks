@@ -28,6 +28,12 @@ regexp("/*[[URL]]*/.*") {
     user-select: all !important;
   }
 
+  [class^="CrossFadeImage-crossFade-"],
+  [class*="10Sndv"] {
+    -webkit-animation-name: none !important;
+    animation-name: none !important;
+  }
+
   [class^="PrePlaySummary-summary-"]>div,
   [class*="320PK"]>div {
     overflow: visible !important;
