@@ -1,4 +1,4 @@
-# Plex Fixes [![Version][version]][1] [![Size][size]][1] [![Install directly from GitHub][install]][2] [![GitHub stars][stars]][3] [![GitHub watchers][watchers]][4] [![GitHub open issues][open issues]][5] [![GitHub closed issues][closed issues]][5] [![GitHub license][license]][6] [![GitHub last commit][last commit]][7] [![devDependencies][devdependencies]][8]
+# Plex Fixes [![Version][version]][1] [![Size][size]][1] [![Install directly from GitHub][install]][2] [![GitHub stars][stars]][3] [![GitHub watchers][watchers]][4] [![GitHub open issues][open issues]][5] [![GitHub closed issues][closed issues]][5] [![GitHub license][license]][6] [![GitHub last commit][last commit]][7]
 
 **_Fixing various issues I find with [Plex]_**
 
@@ -55,8 +55,6 @@ If you would like to contribute to this repository, please...
 [6]: https://creativecommons.org/licenses/by-sa/4.0/
 [last commit]: https://flat.badgen.net/github/last-commit/StylusThemes/Plex-Fixes
 [7]: https://github.com/StylusThemes/Plex-Fixes/commits/master
-[devdependencies]: https://flat.badgen.net/david/dev/StylusThemes/Plex-Fixes
-[8]: https://david-dm.org/StylusThemes/Plex-Fixes?type=dev
 [badges]: https://flat.badgen.net/badge/amount%20of%20badges/12/orange
 
 <!-- Plex LINK -->
