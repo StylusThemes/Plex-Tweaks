@@ -1,4 +1,9 @@
-# Plex Fixes Changelog
+# Plex Tweaks Changelog
+
+## v1.3.1 ... (08 JULY 21)
+
+### Note:
+`*` Only change is in the name, change from Plex Fixes to Plex Tweaks as this is no longer able to be a theme to bring back features from the past on top of adding random tweaks. So it's now just going to be random tweaks that I decide to add here and there. Not really sure what else to really add right now in terms of things, so this theme is currently at a standstill while just waiting for more things to break.
 
 ## v1.3.0 ... (03 NOVEMBER 20)
 

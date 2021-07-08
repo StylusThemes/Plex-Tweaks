@@ -1,12 +1,12 @@
 /* ==UserStyle==
-@name         Plex Fixes
-@version      1.3.0
-@description  Bringing back plex to pre-3.0.0
+@name         Plex Tweaks
+@version      1.3.1
+@description  Tweaks for Plex!
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
-@homepageURL  https://github.com/StylusThemes/Plex-Fixes
-@supportURL   https://github.com/StylusThemes/Plex-Fixes/issues
-@updateURL    https://raw.githubusercontent.com/StylusThemes/Plex-Fixes/master/style.user.css
+@homepageURL  https://github.com/StylusThemes/Plex-Tweaks
+@supportURL   https://github.com/StylusThemes/Plex-Tweaks/issues
+@updateURL    https://raw.githubusercontent.com/StylusThemes/Plex-Tweaks/master/style.user.css
 @license      CC-BY-SA-4.0
 
 @advanced text PORT "Port Number" "32400"
@@ -16,95 +16,87 @@
 @-moz-document regexp("https?://app.plex.tv/.*"),
 regexp("https?://.*:/*[[PORT]]*//.*"),
 regexp("/*[[URL]]*/.*") {
-  [class="version-title"]::after {
+  [class=version-title]::after {
     white-space: pre;
-    content: "\A Plex Fixes - Version 1.3.0";
+    content: "\aPlex Tweaks - Version 1.3.1";
   }
 
   a {
     -webkit-user-select: all !important;
     -moz-user-select: all !important;
-    -ms-user-select: all !important;
     user-select: all !important;
   }
 
-  [class^="CrossFadeImage-crossFade-"],
+  [class^=CrossFadeImage-crossFade-],
   [class*="10Sndv"] {
     -webkit-animation-name: none !important;
     animation-name: none !important;
   }
 
-  [class^="PrePlaySummary-summary-"]>div,
+  [class^=PrePlaySummary-summary-]>div,
   [class*="320PK"]>div {
     overflow: visible !important;
     max-height: none !important;
   }
 
-  [class^="CollapsibleText-readMore-"],
+  [class^=CollapsibleText-readMore-],
   [class*="1FIz2"] {
     display: none !important;
   }
 
-  [class^="NavBarButton-button-"],
-  [class*="oTeMHk"],
-  [class^="NavBar-buttonSeparator-"],
+  [class^=NavBarButton-button-],
+  [class*=oTeMHk],
+  [class^=NavBar-buttonSeparator-],
   [class*="1ZbV4"] {
     display: none !important;
   }
 
-  [class^="AccountSummary-container-"]>div:nth-of-type(1)>div,
+  [class^=AccountSummary-container-]>div:nth-of-type(1)>div,
   [class*="2EbPg"]>div:nth-of-type(1)>div {
     display: none !important;
   }
 
-  [class*="modal-lg"]>[class*="modal-dialog"] {
+  [class*=modal-lg]>[class*=modal-dialog] {
     width: 75vw;
   }
 
-  [class*="modal-body-scroll"] {
+  [class*=modal-body-scroll] {
     max-height: 75vh;
   }
 
-  [class*="modal-body-with-panes"] [class*="modal-body-pane"] {
+  [class*=modal-body-with-panes] [class*=modal-body-pane] {
     height: 100vh;
   }
 
-  [class^="AvatarImg-avatar-"],
+  [class^=AvatarImg-avatar-],
   [class*="3Op56"] {
     border-radius: 4px;
   }
 
-  [class^="MetadataPosterCell-continueWatchingTitleContainer-"],
-  [class*="3yCAY"] {
-    border-radius: 4px !important;
-    padding: 2px 5px !important;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  [class^="PrePlayCastList-rounded-"],
-  [class*="djFPq"] {
+  [class^=PrePlayCastList-rounded-],
+  [class*=djFPq] {
     border-radius: 4px !important;
   }
 
-  [class*="NavBar-container-"],
+  [class*=NavBar-container-],
   [class*="1T0BJ"] {
     height: 30px;
   }
 
-  [class*="NavBarActivityButton-label-"],
+  [class*=NavBarActivityButton-label-],
   [class*="2ZN0g"] {
     top: 6px;
   }
 
-  [class*="QuickSearchInput-container-"],
-  [class*="QuickSearch-container-"],
+  [class*=QuickSearchInput-container-],
+  [class*=QuickSearch-container-],
   [class*="1HiCo"],
   [class*="2PWkB"] {
     height: 25px;
   }
 
-  [class*="NavBarActivityButton-isHighlighted-"] [class*="NavBarActivityButton-activityIcon-"] {
-    opacity: .1;
+  [class*=NavBarActivityButton-isHighlighted-] [class*=NavBarActivityButton-activityIcon-] {
+    opacity: 0.1;
     -webkit-animation: pulsate 5s ease-out;
     -webkit-animation-iteration-count: infinite;
   }
@@ -116,7 +108,7 @@ regexp("/*[[URL]]*/.*") {
     }
 
     50% {
-      opacity: .3;
+      opacity: 0.3;
       -webkit-transform: scale(0.85, 0.85);
     }
 
@@ -125,5 +117,4 @@ regexp("/*[[URL]]*/.*") {
       -webkit-transform: scale(1.3, 1.3);
     }
   }
-
 }

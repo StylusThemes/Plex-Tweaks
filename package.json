@@ -1,11 +1,11 @@
 {
-  "name": "plex-fixes",
-  "title": "Plex Fixes",
-  "version": "1.3.0",
-  "description": "Bringing back plex to pre-3.0.0",
+  "name": "plex-tweaks",
+  "title": "Plex Tweaks",
+  "version": "1.3.1",
+  "description": "Tweaks for Plex!",
   "license": "CC-BY-SA-4.0",
-  "repository": "StylusThemes/Plex-Fixes",
-  "homepage": "https://github.com/StylusThemes/Plex-Fixes",
+  "repository": "StylusThemes/Plex-Tweaks",
+  "homepage": "https://github.com/StylusThemes/Plex-Tweaks",
   "main": "style.user.css",
   "dependencies": {
     "yarn": "^1.22.10"
