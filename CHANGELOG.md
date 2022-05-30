@@ -1,5 +1,10 @@
 # Plex Tweaks Changelog
 
+## v1.3.2 ... (30 MAY 22)
+
+### Fixes:
+`+` Fixed css for enlarge the edit info box to no longer have two scrollbars for poster/background.
+
 ## v1.3.1 ... (08 JULY 21)
 
 ### Note:
