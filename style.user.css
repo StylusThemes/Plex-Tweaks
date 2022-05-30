@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Plex Tweaks
-@version      1.3.1
+@version      1.3.2
 @description  Tweaks for Plex!
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -18,7 +18,7 @@ regexp("https?://.*:/*[[PORT]]*//.*"),
 regexp("/*[[URL]]*/.*") {
   [class=version-title]::after {
     white-space: pre;
-    content: "\aPlex Tweaks - Version 1.3.1";
+    content: "\aPlex Tweaks - Version 1.3.2";
   }
 
   a {
@@ -61,11 +61,19 @@ regexp("/*[[URL]]*/.*") {
   }
 
   [class*=modal-body-scroll] {
-    max-height: 75vh;
+    max-height: 80vh;
   }
 
   [class*=modal-body-with-panes] [class*=modal-body-pane] {
-    height: 100vh;
+    height: 80vh;
+  }
+
+  [class*=modal-dialog] {
+    padding-top: 30px;
+  }
+
+  [class*=edit-metadata-modal] {
+    bottom: unset;
   }
 
   [class^=AvatarImg-avatar-],
